@@ -1,0 +1,184 @@
+extends ./base.jade
+
+
+
+block content
+    
+    #hero
+        .container-fluid
+            .row.justify-content-center
+                .hero-info.col-lg-6.col-md-9.col
+                    h1.name Павел 
+                        br 
+                        | Медников
+                    p.descr 
+                        span Веб-дизайнер 
+                        | и 
+                        span front-end 
+                        | разработчик
+                    .dot-pattern.col-8.offset-2
+
+
+    .projects
+        .container-fluid
+            .row.justify-content-center
+                h2.caption.section Проекты
+        .projects-grid.container-fluid
+
+            .row.project
+                .col-md-6.col-12
+                    .row
+                        .col-5
+                            .pic.ver(style="background-image: url('../assets/karo1.png')")
+                        .col-7
+                            .row: .col-10 
+                                .pic.hor.small.brand(style="background-image: url('../assets/karo_logo.png')")
+                            .row.mt-30: .col-12 
+                                .pic.hor(style="background-image: url('../assets/karo2.png')")
+                .col-md-5.offset-1.col-12.project-info
+                    p.num.caption 01
+                    h3.caption Каро Фильм
+                    p 
+                        strong Роль в проекте: 
+                        | Веб-дизайн, вёрстка
+                    p В рамках полного редизайна сайта сети кинотеатров «Каро Фильм» был обновлён внешний вид портала, в соответствии с новым брендингом компании. Так же была переработана навигация по сайту, дополнен функционал, учтены требования для рекламных материалов и промо-акций, а страницы сайта теперь можно смотреть на любых мобильных устройствах.
+                    p: a(href="https://karofilm.ru/"): strong Перейти на сайт
+
+            .row.project.odd
+                .col-md-5.col-12.project-info
+                    p.num.caption 02
+                    h3.caption Талдомский Кожевенный Завод
+                    p
+                        strong Роль в проекте: 
+                        | Брендинг, веб-дизайн, вёрстка
+                    p Для Талдомского Кожевенного Завода был разработан новый брендинг и корпоративный сайт. Придуман дизайн сайта и админки, а так же сделана адаптивная вёрстка. 
+                    p: a(href="http://talco.su/"): strong Перейти на сайт
+                .col-md-6.col-12.offset-1
+                    .row
+                        .col-7
+                            .row.justify-content-end: .col-10 
+                                .pic.hor.small.brand(style="background-image: url('../assets/talko_logo.png')")
+                            .row.mt-30: .col-12 
+                                .pic.hor(style="background-image: url('../assets/talko1.png')")
+                        .col-5
+                            .pic.ver(style="background-image: url('../assets/talko2.png')")
+
+            .row.project
+                .col-md-6.col-12
+                    .row
+                        .col-5
+                            .pic.ver(style="background-image: url('../assets/ekipa1.jpg')")
+                        .col-7
+                            .row: .col-10 
+                                .pic.hor.small.brand(style="background-image: url('../assets/ekipa_logo.png')")
+                            .row.mt-30: .col-12 
+                                .pic.hor(style="background-image: url('../assets/ekipa2.jpg')")
+                .col-md-5.col-12.offset-1.project-info
+                    p.num.caption 03
+                    h3.caption Ekipa
+                    p
+                        strong Роль в проекте: 
+                        | Брендинг, Веб-дизайн, вёрстка, программирование
+                    p Сайт футбольного агентства Ekipa. Для него был разработан минималистичный дизайн, свёрстаны адаптивные страницы, подготовлены шаблоны под Django-фреймворк.
+                    p: a(href="http://ekipa-agency.com/"): strong Перейти на сайт
+
+            .row.project.odd
+                .col-md-5.col-12.project-info
+                    p.num.caption 04
+                    h3.caption Pre-view
+                    p
+                        strong Роль в проекте: 
+                        | UX-дизайн, Веб-дизайн, вёрстка
+                    p Бета-версия сервиса для поиска работы студентам Pre-view. Для сервиса были проработаны пользовательские сценарии, составлена карта сайта, нарисованы вайфреймы, а так же интерактивный макет. После, была реализована вёрстка макета и подготовка шаблонов для Django-фреймворка.
+                    p: a(href="https://pre-view.ru/"): strong Перейти на сайт
+                .col-md-6.col-12.offset-1
+                    .row
+                        .col-7
+                            .row.justify-content-end: .col-10 
+                                .pic.hor.small(style="background-image: url('../assets/preview3.png')")
+                            .row.mt-30: .col-12 
+                                .pic.hor(style="background-image: url('../assets/preview1.png')")
+                        .col-5
+                            .pic.ver(style="background-image: url('../assets/preview2.png')")
+
+            .row.project
+                .col-md-6.col-12
+                    .row
+                        .col-5
+                            .pic.ver(style="background-image: url('../assets/openpolice3.png')")
+                        .col-7
+                            .row: .col-10 
+                                .pic.hor.small.brand(style="background-image: url('../assets/openpolice_logo.png')")
+                            .row.mt-30: .col-12 
+                                .pic.hor(style="background-image: url('../assets/openpolice1.png')")
+                .col-md-5.col-12.offset-1.project-info
+                    p.num.caption 05
+                    h3.caption Открытая полиция
+                    p
+                        strong Роль в проекте: 
+                        | Веб-дизайн, вёрстка, программирование
+                    p Редизайн портала «Открытая полиция» — онлайн проекта по мониторингу деятельности полиции. Здесь был обновлён внешний вид портала, переосмыслены некоторые разделы, а так же подготовлена вёрстка шаблонов для фреймворка.
+                    p: a(href="http://openpolice.ru/"): strong Перейти на сайт
+
+            .row.project.odd
+                .col-md-5.col-12.project-info
+                    p.num.caption 06
+                    h3.caption Clearspending
+                    p
+                        strong Роль в проекте: 
+                        | UX-дизайн, UI-дизайн
+                    p Разработка дизайна приложения для портала «ГосЗатраты» — негосударственного проекта повышения общественной осведомлённости в области расходования государственных средств.
+                    p: a(href="https://play.google.com/store/apps/details?id=com.uteam.clearspending")
+                        strong Скачать приложение
+                            i.fa.fa-android.ml-10
+                .col-md-6.col-12.offset-1
+                    .row
+                        .col-7
+                            .row.justify-content-end: .col-10 
+                                .pic.hor.small(style="background-image: url('../assets/clearspending3.png')")
+                            .row.mt-30: .col-12 
+                                .pic.hor(style="background-image: url('../assets/clearspending1.png')")
+                        .col-5
+                            .pic.ver(style="background-image: url('../assets/clearspending2.png')")
+
+            .row.project
+                .col-md-6.col-12
+                    .row
+                        .col-5
+                            .pic.ver(style="background-image: url('../assets/UJ1.jpg')")
+                            .pic.ver.mt-30(style="background-image: url('../assets/UJ4.jpg')")
+                        .col-7
+                            .row: .col-10 
+                                .pic(style="background-image: url('../assets/UJ2.jpg')")
+                            .row.mt-30: .col-12 
+                                .pic.hor(style="background-image: url('../assets/UJ3.jpg')")
+                            .row.mt-30: .col-12 
+                                .pic.hor(style="background-image: url('../assets/UJ5.jpg')")
+                .col-md-5.col-12.offset-1.project-info
+                    p.num.caption 07
+                    h3.caption Unexpected Journey
+                    p
+                        strong Роль в проекте: 
+                        | UX-дизайн, UI-дизайн
+                    p Дизайн развлекательного приложения Unexpected Journey, которое строит интересные маршруты по городу.
+                    //- p: a(href="http://openpolice.ru/"): strong: Перейти на сайт
+
+
+    .projects
+        .container-fluid
+            .row.justify-content-center
+                h2.caption.section Клиенты
+        .clients-grid.container-fluid
+            .row.justify-content-around.align-items-center
+                .col.text-center: img(src="../assets/minfin.png", alt="")
+                .col.text-center: img(src="../assets/rosatom.png", alt="")
+                .col.text-center: img(src="../assets/loko.png", alt="")
+            .row.justify-content-around.align-items-center.mt-30
+                .col.text-center: img(src="../assets/aiesec.png", alt="")
+                .col.text-center: img(src="../assets/karo_logo.png", alt="") 
+
+
+
+
+
+
