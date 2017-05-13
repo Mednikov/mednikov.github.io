@@ -1,0 +1,272 @@
+/* ============================ */
+/* ============================ */
+/* MAIN STYLES */
+body{
+    @include fontstack;
+    color: $black;
+    // font-size: 16px;
+}
+
+header{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $white-blue;	
+	border-top: 3px solid $brand;
+}
+
+.logo{
+	display: inline-block;
+	svg{
+		display: block;
+		height: 46px;
+		fill: $brand;
+		polygon{
+			&:hover{
+				fill: $light-blue;
+			}
+		}
+	}
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.main-menu{
+	padding: 19px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    a{
+        position: relative;
+        padding: 10px 40px 9px 30px;
+        color: $brand;
+        text-decoration: none;
+        border: 2px solid $brand;
+        @include border-radius(40px);
+
+        .fa{
+            position: relative;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            margin-right: .7em;
+            @include animation(.3s);
+        }
+
+        &:hover,
+        &:focus{
+            text-decoration: none;
+            // color: $black;
+
+            .fa{
+                opacity: 0;
+                top: -40px;
+                left: 80px;
+            }
+        }
+    }
+}
+
+
+section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&:last-of-type{
+		padding-bottom: 80px;
+	}
+}
+
+
+.hero{
+	padding-top: 0;
+	background-color: $white-blue;
+}
+.hero-index{
+	padding-bottom: 200px;
+}
+
+.slogan{
+	margin-bottom: 20px;
+	// @include fontstack;
+	font-size: 46px;
+    // letter-spacing: .05em;
+    font-weight: bold;
+}
+
+
+.works{
+	padding-top: 0;
+	margin-top: -100px;
+
+	.work{
+		position: relative;
+		margin-bottom: 80px;
+		display: inline-block;
+		width: 400px;
+		height: 300px;
+		// background-color: $light-blue;
+		// box-shadow: 0 3rem 4rem rgba(8, 50, 154, .25);
+		box-shadow: 0 3rem 4rem rgba(50, 8, 154, .25);
+		// @include animation(.15s);
+
+		&:hover,
+		&:focus{
+			.info{
+				margin-top: 20px;
+				margin-left: 20px;
+				opacity: 1;
+			}
+			.tags{
+				opacity: 0;
+			}
+		}
+
+		.info{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: table;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			background-color: rgba(50, 8, 154, .75);
+			opacity: 0;
+			@include animation(.3s);
+			.work-name{
+				display: table-cell;
+				margin-top: 0;
+				margin-left: 0;
+				padding: 40px;
+				color: $white;
+				vertical-align: middle;
+			}
+		}
+
+		.tags{
+			position: absolute;
+			top: -10px;
+			left: 101%;
+			opacity: 1;
+			color: $light-blue;
+			font-size: 12px;
+			@include animation(.3s);
+
+			-webkit-transform: rotate(90deg);
+			   -moz-transform: rotate(90deg);
+			    -ms-transform: rotate(90deg);
+			     -o-transform: rotate(90deg);
+			        transform: rotate(90deg);
+			-webkit-transform-origin: bottom left;
+			   -moz-transform-origin: bottom left;
+			    -ms-transform-origin: bottom left;
+			     -o-transform-origin: bottom left;
+			        transform-origin: bottom left;
+			// filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		}
+
+		.work-img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			@include animation(.3s);
+		}
+	}
+
+	.col-md-12{
+		.work{
+			width: 800px;
+			height: 600px;
+		}
+	}
+
+	.col-md-6{
+		&:nth-child(2n){
+			.work{
+				// background-color: $white;
+			}
+		}
+	}
+}
+
+
+
+.clients-grid{
+    // padding-top: 160px;
+    .row{
+    	margin-top: 40px;
+    }
+    img{
+        display: inline-block;
+        // width: 100px;
+        max-height: 100px;
+    }
+}
+
+
+
+.services{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: $white-blue;
+}
+
+.service-list{
+	margin-bottom: 0;
+	list-style-type: none;
+	font-size: 21px;
+	li{
+		position: relative;
+		padding-bottom: 10px;
+		&:before{
+			content:"";
+			position: absolute;
+			top: 15px;
+			left: -40px;
+			width: 30px;
+			border-bottom: 2px solid $brand;
+		}
+		&:last-of-type{
+			padding-bottom: 0;
+		}
+	}
+}
+
+
+
+footer{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: $white-blue;
+
+	a{
+		text-decoration: none;
+	}	
+}
+.footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $brand;
+	color: $light-blue;
+	font-size: 14px;
+}
+
+
+
+.project{
+	padding-top: 0;
+	margin-top: -120px;
+}
+
+.descr-heading{
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: $light-blue;
+}
+
+
