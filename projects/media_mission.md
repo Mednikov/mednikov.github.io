@@ -1,6 +1,5 @@
 ---
 layout: project
-type: project
 
 title: Медиа Цель
 meta: Посадочная страница группы программистов «Медиа Цель»
@@ -13,6 +12,9 @@ description: Посадочная страница группы программ
 ---
 
 # Заголовок 1
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae magni cum amet porro ipsam, optio officiis libero, ad iure et voluptas pariatur, rerum neque laborum. Ratione animi fugiat, vel neque.
+
+I give this plugin two :+1:!
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae magni cum amet porro ipsam, optio officiis libero, ad iure et voluptas pariatur, rerum neque laborum. Ratione animi fugiat, vel neque.
 
 ## Заголовок 2
@@ -35,5 +37,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae magni cum a
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae magni cum amet porro ipsam, optio officiis libero, ad iure et voluptas pariatur, rerum neque laborum. Ratione animi fugiat, vel neque.
 
-![alt text][{{site.baseurl}}/img/project_img/{{page.cover}}]
+![alt text]({{site.baseurl}}/img/project_img/{{page.cover}})
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae magni cum amet porro ipsam, optio officiis libero, ad iure et voluptas pariatur, rerum neque laborum. Ratione animi fugiat, vel neque.
+
+![alt text]({{site.baseurl}}/img/project_img/{{page.cover}})
+
+![alt text]({{site.baseurl}}/img/project_img/{{page.cover}})
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae magni cum amet porro ipsam, optio officiis libero, ad iure et voluptas pariatur, rerum neque laborum. Ratione animi fugiat, vel neque.
 

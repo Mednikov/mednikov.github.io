@@ -23,14 +23,14 @@ layout: default
     <div class="row justify-content-md-center">
       <div class="col-md-10">
         <div class="row">
-          {% for project in site.pages %}
-            {% if project.type == 'project' %}
+
+          {% assign projects = (site.pages | where: "layout" , "project") %}
+          {% for project in projects %}
           <div class="col-md-6 text-center"><a class="work" href="{{site.baseurl}}{{project.url}}">
-              <div class="work-img"><img src="{{site.baseurl}}/img/project_img/{{project.cover}}" alt=""></div>
+              <div class="work-img"><img src="{{site.baseurl}}/img/project_img/{{project.cover}}" alt="Проект — {{project.title}}"></div>
               <div class="info text-center">
                 <h3 class="work-name">{{project.title}}</h3>
               </div></a></div>
-            {% endif %}
           {% endfor %}
 
         </div>
