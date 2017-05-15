@@ -60,39 +60,48 @@ small, .small {
 .text ol, .text ul, .text dir, .text menu, .text dd {
   margin-left: 40px;
   margin-bottom: 20px; }
-
 .text ol {
   list-style-type: decimal; }
-
 .text ul {
   list-style-type: disc; }
-
 .text ol ul, .text ul ol, .text ul ul, .text ol ol {
   margin-top: 0;
   margin-bottom: 0; }
-
 .text ul ul, .text ol ul {
   list-style-type: circle;
   margin-left: 30px; }
-
 .text ol ol, .text ul ol {
   list-style-type: lower-latin;
   margin-left: 30px; }
-
+.text blockquote {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 60px;
+  position: relative;
+  font-style: italic; }
+  .text blockquote:before {
+    content: "\201C";
+    position: absolute;
+    top: -55px;
+    left: -20px;
+    font-size: 180px;
+    color: #f5f3f9;
+    z-index: -1; }
 .text p {
   line-height: 1.5em; }
-  .text p + img {
-    margin-top: 60px; }
-
+  .text p img {
+    text-align: center; }
+.text img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0 3rem 4rem rgba(50, 8, 154, 0.25);
+  margin-top: 60px;
+  margin-bottom: 100px; }
 .text.inner {
   padding: 40px !important; }
 
-.text img {
-  margin-bottom: 20px;
-  box-shadow: 0 3rem 4rem rgba(50, 8, 154, 0.25); }
-  .text img + p,
-  .text img + img {
-    margin-top: 100px; }
+img.cover {
+  margin-top: 0; }
 
 .caption {
   font-family: 'Ubuntu', serif;
@@ -332,7 +341,6 @@ section {
 
 .clients-grid .row {
   margin-top: 40px; }
-
 .clients-grid img {
   display: inline-block;
   max-height: 100px; }
@@ -383,3 +391,5 @@ footer {
   font-weight: bold;
   font-size: 14px;
   color: #9f84d4; }
+
+/*# sourceMappingURL=style.css.map */

@@ -8,11 +8,11 @@ layout: default
       <div class="col-md-12 text-center">
         <h1 class="slogan">{{page.slogan}}</h1>
         <h4 class="subheading">{{page.subheading}}</h4>
-        <ul class="icon-stack clearfix">
-          <li><a href=""><i class="fa fa-behance"></i></a></li>
-          <li data-toggle="tooltip" data-placement="top" title="Буду рад инвайту"><a href=""><i class="fa fa-dribbble"></i></a></li>
-          <li><a href=""><i class="fa fa-github"></i></a></li>
-          <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        <ul class="icon-stack">
+          <li><a href="https://www.behance.net/{{site.behance_username}}"><i class="fa fa-behance"></i></a></li>
+          <li data-toggle="tooltip" data-placement="top" title="Буду рад инвайту"><a href="https://dribbble.com/{{site.dribbble_username}}"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="https://github.com/{{site.github_username}}"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/{{site.linkedin_username}}"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
     </div>
@@ -27,7 +27,7 @@ layout: default
           {% assign projects = (site.pages | where: "layout" , "project") %}
           {% for project in projects %}
           <div class="col-md-6 text-center"><a class="work" href="{{site.baseurl}}{{project.url}}">
-              <div class="work-img"><img src="{{site.baseurl}}/img/project_img/{{project.cover}}" alt="Проект — {{project.title}}"></div>
+              <div class="work-img"><img src="{{site.baseurl}}/img/project_img/{{project.folder}}/{{project.cover}}" alt="Проект — {{project.title}}"></div>
               <div class="info text-center">
                 <h3 class="work-name">{{project.title}}</h3>
               </div></a></div>

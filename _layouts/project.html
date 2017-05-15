@@ -16,16 +16,24 @@ layout: default
     <div class="row justify-content-md-center">
       <div class="col-md-10 text">
         <div class="row">
-          <div class="col-md-6"><img src="{{site.baseurl}}/img/project_img/{{page.cover}}" alt="Проект — {{page.title}}" width="100%" height="334"></div>
+          <div class="col-md-6"><img class="cover" src="{{site.baseurl}}/img/project_img/{{page.folder}}/{{page.cover}}" alt="Проект — {{page.title}}" width="100%" height="334"></div>
           <div class="col-md-6">
+            {% if page.customer %}
             <p class="descr-heading">Заказчик</p>
             <p>{{page.customer}}</p>
+            {% endif %}
+            {% if page.src %}
             <p class="descr-heading">Ссылка на проект</p>
             <p><a href="{{page.src}}">{{page.src}}</a></p>
+            {% endif %}
+            {% if page.role %}
             <p class="descr-heading">Роль в проекте</p>
             <p>{{page.role}}</p>
+            {% endif %}
+            {% if page.description %}
             <p class="descr-heading">Описание</p>
             <p>{{page.description}}</p>
+            {% endif %}
           </div>
         </div>
         <div class="row mt-5">
