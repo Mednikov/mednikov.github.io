@@ -1,3 +1,2 @@
-Pavel Mednikov
-======
+# Pavel Mednikov
 Personal portfolio

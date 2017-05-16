@@ -3,228 +3,202 @@
 /* MAIN STYLES */
 body{
     @include fontstack;
-    // font-size: 14px;
-    // line-height: 1.5em;
     color: $black;
-    overflow-x: hidden;
+    // font-size: 16px;
 }
 
 header{
-    padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 100px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $white-blue;	
+	border-top: 3px solid $brand;
+}
 
-    #mainLogo{
-        a{
-            display: block;
-            width: 40px;
-            height: 40px;
-            svg{
-                fill:$black;
-                @include animation(.3s);
-            }
+.logo{
+	display: inline-block;
+	svg{
+		display: block;
+		height: 46px;
+		fill: $brand;
+		polygon{
+			&:hover{
+				fill: $light-blue;
+			}
+		}
+	}
+	&:hover{
+		cursor: pointer;
+	}
+}
 
-            &:hover{
-                color: $blue;
-                svg{
-                    fill:$blue;
-                }
-            }
-        }
-    }
+.main-menu{
+	padding: 19px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    a{
+        position: relative;
+        padding: 10px 40px 9px 30px;
+        color: $brand;
+        text-decoration: none;
+        border: 2px solid $brand;
+        @include border-radius(40px);
 
-    .nav,
-    .write{
-        font-size: 87.5%;
-        font-weight: bold;
-        a{
+        .fa{
             position: relative;
-            color: $black;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            margin-right: .7em;
+            @include animation(.3s);
+        }
+
+        &:hover,
+        &:focus{
+            text-decoration: none;
+            // color: $black;
 
             .fa{
-                position: relative;
-                top: 0;
-                left: 0;
-                opacity: 1;
-                margin-right: .7em;
-                @include animation(.3s);
-            }
-
-            &:hover,
-            &:focus{
-                text-decoration: none;
-                color: $blue;
-
-                .fa{
-                    opacity: 0;
-                    top: -40px;
-                    left: 80px;
-                }
+                opacity: 0;
+                top: -40px;
+                left: 80px;
             }
         }
     }
 }
 
 
-
-#hero{
-    padding: 40px 100px;
-
-    .hero-info{
-        position: relative;
-        padding-top: 100px;
-        padding-bottom: 100px;
-
-        .name{
-            font-size: 6rem;
-        }
-        .descr{
-            display: inline-block;
-            position: relative;
-            margin-left: 60px;
-            margin-top: 20px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            span{
-                color: $blue;
-            }
-            &:before{
-                content:'';
-                position: absolute;
-                top: -10px;
-                left: 0;
-                width: 100%;
-                border-top: 2px solid $black;
-            }
-        }
-
-        .dot-pattern{
-            position: absolute;
-            top: 0;
-            height: 100%;
-            background: url('../img/dot.png');
-            z-index: -1;
-        }
-    }
+section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&:last-of-type{
+		padding-bottom: 80px;
+	}
 }
 
 
-.projects{
-    padding: 0 100px;
-    position: relative;
-
-    .section{
-        position: absolute;
-        top: 0;
-        left: -5rem;
-        font-size: 12rem;
-        color: $pink;
-        z-index: -1;
-        background: linear-gradient($pink 30%, $white);
-          -webkit-background-clip: text;
-          color: transparent;
-    }
-
-    .projects-grid{
-        padding-top: 300px;
-        .project{
-            margin-bottom: 10em;
-            .project-info{
-                position: relative;
-                color: black;
-                .num{
-                    position: absolute;
-                    top: -140px;
-                    left: -40px;
-                    color: $pink;
-                    font-size: 10rem;
-                    z-index: -1;
-                }
-                a{
-                    position: relative;
-                    // left: -1.3em;
-                    text-decoration: none;
-                    @include animation(.3s);
-                    // .fa{
-                    //     margin-right: .5em;
-                    //     opacity: 0;
-                    //     @include animation(.3s);
-                    // }
-
-                    &:before{
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        width: 50px;
-                        margin-left: -(50px/2);
-                        border-bottom: 1px solid $blue;
-                        opacity: 0;
-                        -webkit-transform: rotate(45deg) translate(-50px);
-                           -moz-transform: rotate(45deg) translate(-50px);
-                             -o-transform: rotate(45deg) translate(-50px);
-                                transform: rotate(45deg) translate(-50px);
-                        @include animation(.15s);
-                    }
-                    &:hover{
-                        // left: 0;
-                        // .fa{
-                        //     opacity: 1;
-                        // }
-                        &:before{
-                            opacity: 1;
-                            -webkit-transform: rotate(45deg) translate(0);
-                               -moz-transform: rotate(45deg) translate(0);
-                                 -o-transform: rotate(45deg) translate(0);
-                                    transform: rotate(45deg) translate(0);
-                        }
-                    }
-                }
-
-                // &:hover,
-                // &:focus
-                // {
-                //     text-decoration: none;
-                // }
-            }
-
-            .pic{
-                width: 100%;
-                height: 200px;
-                // background: $pink; 
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: 50% 0;
-                border: 1px solid $pink;
-
-                &.ver{
-                    height: 300px;
-                }
-                &.small{
-                    height: 150px;
-                }
-                &.brand{
-                    background-size: contain;
-                    background-position: 50% 50%;
-                    border: none;
-                }
-            }
-
-            &.odd{
-                .project-info{
-                    text-align: right;
-                    .num{
-                        right: -40px;
-                    }
-                }
-            }
-        }
-    }
+.hero{
+	padding-top: 0;
+	background-color: $white-blue;
 }
+.hero-index{
+	padding-bottom: 200px;
+}
+
+.slogan{
+	margin-bottom: 20px;
+	// @include fontstack;
+	font-size: 46px;
+    // letter-spacing: .05em;
+    font-weight: bold;
+}
+
+
+.works{
+	padding-top: 0;
+	margin-top: -100px;
+
+	.work{
+		position: relative;
+		margin-bottom: 80px;
+		display: inline-block;
+		width: 400px;
+		height: 300px;
+		// background-color: $light-blue;
+		// box-shadow: 0 3rem 4rem rgba(8, 50, 154, .25);
+		box-shadow: 0 3rem 4rem rgba(50, 8, 154, .25);
+		// @include animation(.15s);
+
+		&:hover,
+		&:focus{
+			.info{
+				margin-top: 20px;
+				margin-left: 20px;
+				opacity: 1;
+			}
+			.tags{
+				opacity: 0;
+			}
+		}
+
+		.info{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: table;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			background-color: rgba(50, 8, 154, .75);
+			opacity: 0;
+			@include animation(.3s);
+			.work-name{
+				display: table-cell;
+				margin-top: 0;
+				margin-left: 0;
+				padding: 40px;
+				color: $white;
+				vertical-align: middle;
+			}
+		}
+
+		.tags{
+			position: absolute;
+			top: -10px;
+			left: 101%;
+			opacity: 1;
+			color: $light-blue;
+			font-size: 12px;
+			@include animation(.3s);
+
+			-webkit-transform: rotate(90deg);
+			   -moz-transform: rotate(90deg);
+			    -ms-transform: rotate(90deg);
+			     -o-transform: rotate(90deg);
+			        transform: rotate(90deg);
+			-webkit-transform-origin: bottom left;
+			   -moz-transform-origin: bottom left;
+			    -ms-transform-origin: bottom left;
+			     -o-transform-origin: bottom left;
+			        transform-origin: bottom left;
+			// filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		}
+
+		.work-img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			@include animation(.3s);
+		}
+	}
+
+	.col-md-12{
+		.work{
+			width: 800px;
+			height: 600px;
+		}
+	}
+
+	.col-md-6{
+		&:nth-child(2n){
+			.work{
+				// background-color: $white;
+			}
+		}
+	}
+}
+
+
 
 .clients-grid{
-    padding-top: 160px;
+    // padding-top: 160px;
+    .row{
+    	margin-top: 40px;
+    }
     img{
         display: inline-block;
         // width: 100px;
@@ -233,6 +207,66 @@ header{
 }
 
 
-footer{
-    margin-top: 200px;
+
+.services{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: $white-blue;
 }
+
+.service-list{
+	margin-bottom: 0;
+	list-style-type: none;
+	font-size: 21px;
+	li{
+		position: relative;
+		padding-bottom: 10px;
+		&:before{
+			content:"";
+			position: absolute;
+			top: 15px;
+			left: -40px;
+			width: 30px;
+			border-bottom: 2px solid $brand;
+		}
+		&:last-of-type{
+			padding-bottom: 0;
+		}
+	}
+}
+
+
+
+footer{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: $white-blue;
+
+	a{
+		text-decoration: none;
+	}	
+}
+.footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $brand;
+	color: $light-blue;
+	font-size: 14px;
+}
+
+
+
+.project{
+	padding-top: 0;
+	margin-top: -120px;
+}
+
+.descr-heading{
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: $light-blue;
+}
+
+
