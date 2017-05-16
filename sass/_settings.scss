@@ -146,15 +146,15 @@ small, .small{
     //     margin-top: 1em;
     // }
     blockquote{
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
         padding-left: 60px;
         position: relative;
         font-style: italic;
         &:before{
             content: "\201C";
             position: absolute;
-            top: -55px;
+            top: -68px;
             left: -20px;
             font-size: 180px;
             color: $white-blue;
@@ -181,6 +181,11 @@ small, .small{
 
 img.cover{
     margin-top: 0;
+}
+
+img.emoji{
+    display: inline;
+    margin: 0;
 }
 
 // .text-center{

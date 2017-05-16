@@ -1,6 +1,7 @@
 ---
 layout: project
 folder: clearspending
+permalink: "clearspending.html"
 
 title: ГосЗатраты
 meta: ГосЗатраты - негосударственный проект повышения общественной осведомлённости в области расходования государственных средств.

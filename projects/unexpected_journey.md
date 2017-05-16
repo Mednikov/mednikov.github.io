@@ -1,6 +1,7 @@
 ---
 layout: project
 folder: unexpected_journey
+permalink: unexpected_journey
 
 title: Unexpected Journey
 meta: Дизайн развлекательного приложения Unexpected Journey, которое строит интересные маршруты по городу.

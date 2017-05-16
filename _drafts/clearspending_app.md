@@ -1,6 +1,7 @@
 ---
 layout: project
 folder: clearspending_app
+permalink: "clearspending_app.html"
 
 title: ClearSpending App
 meta: Разработка дизайна приложения для портала «ГосЗатраты» — негосударственного проекта повышения общественной осведомлённости в области расходования государственных средств.

@@ -1,7 +1,7 @@
 ---
 layout: project
 folder: kraft_consulting
-
+permalink: kraft_consulting
 title: Крафт-Консалтинг
 meta: Корпоративный сайт юридической фирмы «Крафт-Консалтинг»
 
