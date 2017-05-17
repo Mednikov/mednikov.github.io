@@ -16,14 +16,14 @@
 title: Павел Медников — веб-дизайнер и front-end разработчик
 email: hello@pavelmednikov.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Более 7 лет опыта в проектировании, дизайне, разработке веб-сайтов, мобильных приложений и много другого.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pavelmednikov.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: Павел Медников
 subtitle: Веб-дизайнер и front-end разработчик
+
+fb_app_id: 222928808209319
 
 twitter_username: tomatoesaurus
 behance_username: mednikov

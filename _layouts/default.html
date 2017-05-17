@@ -12,13 +12,27 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="image_src" href="">
+
     <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
-    <meta property="og:site_name" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
+
+    <link rel="image_src" href="{{site.baseurl}}/img/og.jpg">
+    {% if site.fb_app_id %}
+    <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
+    {% endif %}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{site.title}}">
+    <meta property="og:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}">
+    <meta property="og:description" content="{% if page.meta %} {{page.meta}} {% else %} {{site.description}} {% endif %}">
     <meta property="og:locale" content="ru-RU">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="{{site.baseurl}}/img/og.jpg">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+    <meta name="twitter:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}" />
+    <meta name="twitter:description" content="{% if page.meta %} {{page.meta}} {% else %} {{site.description}} {% endif %}">
+    <meta name="twitter:image" content="{{site.baseurl}}/img/og.jpg" />
+
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700|PT+Sans:100,100i,400,400i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if IE 7]-->
@@ -38,6 +52,7 @@
     <!--[endif]-->
   </head>
   <body>
+    <script src="../js/facebook-sdk.js"></script>
     <!--HEADER-->
     {% include header.html %}
     <!--END HEADER-->
@@ -49,5 +64,6 @@
     <!--FOOTER-->
     {% include footer.html %}
     <!--END FOOTER-->
+    {% include ya-metrika.html %}
   </body>
 </html>
