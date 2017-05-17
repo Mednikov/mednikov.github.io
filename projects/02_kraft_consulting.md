@@ -7,7 +7,7 @@ meta: Корпоративный сайт юридической фирмы «К
 
 cover: kraftconsulting_cover.jpg
 customer: Крафт-Консалтинг
-<!-- src: https://mediami.ru -->
+src: http://kraft-consulting.pro/
 role: Веб-дизайн, вёрстка
 description: Корпоративный сайт юридической фирмы «Крафт-Консалтинг».
 ---
