@@ -418,22 +418,22 @@ footer {
   .cover {
     height: initial; } }
 @media (max-width: 575px) {
-  h6 {
-    font-size: 14px; }
-
-  h5 {
-    font-size: 16px; }
-
-  h4, .subheading {
-    font-size: 18px; }
-
-  h3, .subheading {
-    font-size: 20px; }
+  h1, h2, h3, h4, h5, h6, .slogan {
+    font-size: 24px; }
 
   h2 {
     font-size: 22px; }
 
-  h1, h2, h3, h4, h5, h6, .slogan {
-    font-size: 24px; } }
+  h3, .subheading {
+    font-size: 20px; }
+
+  h4, .subheading {
+    font-size: 18px; }
+
+  h5 {
+    font-size: 16px; }
+
+  h6 {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
