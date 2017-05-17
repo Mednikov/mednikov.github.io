@@ -396,4 +396,44 @@ footer {
   font-size: 14px;
   color: #9f84d4; }
 
+@media (max-width: 1199px) {
+  .works .work {
+    width: 370px;
+    height: 278px;
+    margin-bottom: 30px; }
+    .works .work:hover .info, .works .work:focus .info {
+      margin-top: 10px;
+      margin-left: 10px; }
+
+  .cover {
+    height: 278px; } }
+@media (max-width: 991px) {
+  .works .work {
+    width: 270px;
+    height: 203px; }
+
+  .cover {
+    height: 203px; } }
+@media (max-width: 767px) {
+  .cover {
+    height: initial; } }
+@media (max-width: 575px) {
+  h6 {
+    font-size: 14px; }
+
+  h5 {
+    font-size: 16px; }
+
+  h4, .subheading {
+    font-size: 18px; }
+
+  h3 {
+    font-size: 20px; }
+
+  h2 {
+    font-size: 22px; }
+
+  h1, h2, h3, h4, h5, h6, .slogan {
+    font-size: 24px; } }
+
 /*# sourceMappingURL=style.css.map */
