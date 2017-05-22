@@ -269,4 +269,16 @@ footer{
 	color: $light-blue;
 }
 
+.page-404{
+	padding-top: 80px;
+	.huge{
+		font-size: 72px;
+	}
+	.page-404-img{
+		display:inline-block; 
+		padding-top: 40px;
+		max-height: 250px;
+	}
+}
+
 
