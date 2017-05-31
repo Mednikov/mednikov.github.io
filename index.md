@@ -14,6 +14,6 @@ services:
   - Дизайн печатной продукции
 
 clients_heading: Клиенты
-clients_subheading: Организации с которыми работали вместе
+clients_subheading: Организации, с которыми работали вместе
 ---
 
