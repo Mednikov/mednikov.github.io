@@ -14,12 +14,74 @@
     // background: $red;
 }
 
-input {
+input,
+input.form-control,
+textarea.form-control{
     outline:none;
+    // border: 2px solid $light-blue;
+    // @include border-radius(0);
+    color: $brand;
 }
 
-button, textarea{
+button, textarea,
+button:hover, textarea:hover,
+button:focus, textarea:focus,
+button:active, textarea:active,{
     outline:none!important;
+}
+
+.modal{
+    .form-control{
+        color: $brand;
+        
+        // &:hover,
+        &:focus{
+            border: 1px solid $brand;
+        }
+
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder{
+            color: $light-blue !important;
+        }
+    }
+    .modal-header{
+        background-color: $brand;
+        .modal-title{
+            color: $white;
+        }
+        .close{
+            color: $white;
+        }
+    }
+    .modal-footer{
+        background-color: $white-blue;
+    }
+}
+
+.btn{
+    display: inline-block;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 10px 30px;
+    color: $brand;
+    text-decoration: none;
+    border: 2px solid $brand;
+    @include border-radius(40px);
+    @include fontstack;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+        background-color: $brand;
+        color: $white;
+        @include animation(.15s);
+    }
 }
 
 img {
