@@ -38,6 +38,18 @@ button:active, textarea:active {
 .modal .modal-footer {
   background-color: #f5f3f9; }
 
+.parsley-error {
+  border-color: red; }
+  .parsley-error:focus {
+    border-color: red !important; }
+
+.parsley-errors-list {
+  padding-left: 0;
+  color: red; }
+  .parsley-errors-list li {
+    font-size: 12px;
+    list-style-type: none; }
+
 .btn {
   display: inline-block;
   background-color: transparent;
