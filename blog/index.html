@@ -1,0 +1,42 @@
+---
+layout: default
+title: Блог
+---
+
+<section class="hero hero-index">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center"> 
+        <h1>{{page.title}}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="post-list">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-10 text">
+        <div class="row">
+          {% for post in paginator.posts %}
+          <div class="post-item col-12 col-sm-6 col-md-3">
+            <p class="date">{{post.date | date: "%d.%m.%Y"}}</p>
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+            <p class="meta">{{post.meta}}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="conatiner">
+    <div class="row justify-content-md-center">
+      <div class="col-md-10 text">
+        <div class="row">
+          {% include pagination.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

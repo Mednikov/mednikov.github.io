@@ -444,9 +444,22 @@ footer {
   color: #9f84d4;
   font-size: 14px; }
 
-.project {
+.project, .post-list,
+.post {
   padding-top: 0;
   margin-top: -120px; }
+
+.post-list,
+.post {
+  background-color: #f5f3f9; }
+
+.post-item {
+  margin-bottom: 20px; }
+
+.date {
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #9f84d4; }
 
 .descr-heading {
   margin-bottom: 0;

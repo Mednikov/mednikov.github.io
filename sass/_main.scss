@@ -256,9 +256,24 @@ footer{
 
 
 
-.project{
+.project{ 
 	padding-top: 0;
 	margin-top: -120px;
+}
+
+.post-list,
+.post{
+	@extend .project;
+	background-color: $white-blue; 
+}
+
+.post-item{
+	margin-bottom: 20px;
+}
+.date{
+	margin-bottom: 5px;
+	font-size: 13px;
+	color: $light-blue;
 }
 
 .descr-heading{
