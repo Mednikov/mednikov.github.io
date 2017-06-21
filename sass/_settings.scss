@@ -141,12 +141,15 @@ p{
 }
 
 a{
-    text-decoration: underline;
+    // text-decoration: underline;
     color: $brand;
+    border-bottom: 1px solid $brand;
 
     &:hover,
     &:focus{
         color: $light-blue;
+        text-decoration: none;
+        border-color: $light-blue;
     }
 }
 

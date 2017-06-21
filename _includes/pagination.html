@@ -1,13 +1,29 @@
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+{% if paginator.total_pages > 1 %} 
+<section class="pagination">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-10 text">
+        <div class="row">
+          {% if paginator.previous_page %}
+          <div class="col-4 text-left">
+            <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Назад</a>
+          </div>
+          {% else %}
+          <div class="col-4"></div>
+          {% endif %}
+          <div class="col-4 text-center">
+            <span class="page-number ">Страница {{ paginator.page }} из {{ paginator.total_pages }}</span>
+          </div>
+          {% if paginator.next_page %}
+          <div class="col-4 text-right">
+            <a href="{{ paginator.next_page_path }}" class="next">Дальше &rarr;</a>
+          </div>
+          {% else %}
+          <div class="col-4"></div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
