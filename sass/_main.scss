@@ -16,6 +16,7 @@ header{
 
 .logo{
 	display: inline-block;
+	border-bottom: none;
 	svg{
 		display: block;
 		height: 46px;
@@ -94,6 +95,12 @@ section{
     font-weight: bold;
 }
 
+.icon-stack{
+	a{
+		border-bottom: none;
+	}
+}
+
 
 .works{
 	padding-top: 0;
@@ -109,6 +116,7 @@ section{
 		// box-shadow: 0 3rem 4rem rgba(8, 50, 154, .25);
 		box-shadow: 0 3rem 4rem rgba(50, 8, 154, .25);
 		// @include animation(.15s);
+		border-bottom: none;
 
 		&:hover,
 		&:focus{
@@ -261,10 +269,17 @@ footer{
 	margin-top: -120px;
 }
 
-.post-list,
-.post{
-	@extend .project;
-	background-color: $white-blue; 
+// .post-list,
+// .post{
+// 	@extend .project;
+// 	background-color: $white-blue; 
+// }
+
+.pagination{
+	padding-bottom: 40px !important;
+	.page-number{
+		color: $light-blue;
+	}
 }
 
 .post-item{
