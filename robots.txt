@@ -1,5 +1,5 @@
 Sitemap: http://pavelmednikov.com/sitemap.xml
 
 User-Agent: *
-Disallow:
+Disallow: http://pavelmednikov.com/google7d24995e3e09b4db.html
 Host: pavelmednikov.com
