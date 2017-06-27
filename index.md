@@ -15,5 +15,8 @@ services:
 
 clients_heading: Клиенты
 clients_subheading: Организации, с которыми работали вместе
+
+blog_heading: Статьи
+blog_subheading: Ответы на вопросы и различные публикации по теме веб-дизайна
 ---
 
