@@ -56,7 +56,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="projects">
+<section class="clients">
   <div class="clients-grid container">
     <div class="row text-center">
       <div class="col">
@@ -77,3 +77,28 @@ layout: default
     </div>
   </div>
 </section>
+
+{% if site.posts.size > 0 %}
+<section class="post-list post-list-home">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-10 text">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <h6 class="title"><a href="{{site.baseurl}}blog/">{{page.blog_heading}}</a></h6>
+            <h6 class="subheading">{{page.blog_subheading}}</h6>
+          </div>
+          {% for post in site.posts limit:3 %}
+          <div class="post-item col-12 col-sm-6 col-md-3">
+            <p class="date">{% include date.html %}</p>
+            <!-- <p class="date">{{post.date | date: "%d.%m.%Y"}}</p> -->
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+            <p class="meta">{{post.meta}}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

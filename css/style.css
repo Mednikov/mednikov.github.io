@@ -177,7 +177,8 @@ img.emoji {
   font-family: 'PT Sans', sans-serif;
   font-weight: 300;
   color: #9f84d4;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  line-height: inherit; }
 
 .icon-stack {
   display: inline-block;
@@ -409,6 +410,9 @@ section {
     width: 800px;
     height: 600px; }
 
+.clients {
+  padding-bottom: 120px; }
+
 .clients-grid .row {
   margin-top: 40px; }
 .clients-grid img {
@@ -454,6 +458,23 @@ footer {
 .project {
   padding-top: 0;
   margin-top: -120px; }
+
+.post-list,
+.post {
+  padding-top: 80px; }
+
+.post-list-home {
+  padding-top: 80px;
+  padding-bottom: 40px !important;
+  border-top: 10px solid #9f84d4;
+  border-bottom: 10px solid #9f84d4; }
+  .post-list-home .title {
+    margin-top: 1.45rem;
+    margin-bottom: 0;
+    line-height: inherit; }
+  .post-list-home .subheading {
+    margin-top: 1.5rem;
+    line-height: inherit; }
 
 .pagination {
   padding-bottom: 40px !important; }
