@@ -30,3 +30,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jekyll-sitemap'
 
+# Hide this is jekyll serve doesn't work
+gem 'nokogiri', '~> 1.6.8.rc2'
+
