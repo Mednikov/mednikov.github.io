@@ -1,5 +1,6 @@
 ---
 layout: home
+breadcrumb: Главная
 
 slogan: Павел Медников
 subheading: Веб-дизайнер и front-end разработчик
