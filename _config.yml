@@ -18,7 +18,8 @@ email: hello@pavelmednikov.com
 description: > # this means to ignore newlines until "baseurl:"
   Более 7 лет опыта в проектировании, дизайне, разработке веб-сайтов, мобильных приложений и много другого.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://pavelmednikov.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://pavelmednikov.com # the base hostname & protocol for your site, e.g. http://example.com
+enforce_ssl: pavelmednikov.com
 
 author: Павел Медников
 subtitle: Веб-дизайнер и front-end разработчик
