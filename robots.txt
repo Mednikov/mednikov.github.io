@@ -1,4 +1,4 @@
-Sitemap: http://pavelmednikov.com/sitemap.xml
+Sitemap: https://pavelmednikov.com/sitemap.xml
 
 User-Agent: *
 Disallow: /google7d24995e3e09b4db.html
