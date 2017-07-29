@@ -4,4 +4,5 @@ User-Agent: *
 Disallow: /google7d24995e3e09b4db.html
 Disallow: /thanks
 Disallow: /404
+Disallow: /agreement
 Host: https://pavelmednikov.com
