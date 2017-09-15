@@ -198,6 +198,18 @@ section{
 			}
 		}
 	}
+
+
+	&.related{
+		margin-top: 0;
+
+		.slogan{
+			font-size: 36px;
+		}
+		.subheading{
+			margin-bottom: 4rem;
+		}
+	}
 }
 
 .clients{

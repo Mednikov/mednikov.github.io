@@ -4,6 +4,7 @@ folder: kraft_consulting
 permalink: kraft_consulting
 title: Крафт-Консалтинг
 meta: Корпоративный сайт юридической фирмы «Крафт-Консалтинг»
+cat: project
 
 cover: kraftconsulting_cover.jpg
 customer: Крафт-Консалтинг

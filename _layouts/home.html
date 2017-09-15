@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- HERO -->
 <section class="hero hero-index">
   <div class="container">
     <div class="row">
@@ -19,13 +20,15 @@ layout: default
     </div>
   </div>
 </section>
+
+<!-- PORFOLIO -->
 <section class="works">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-md-10">
         <div class="row">
 
-          {% assign projects = (site.pages | where: "layout" , "project") %}
+          {% assign projects = (site.pages | where: "cat" , "project") %}
           {% for project in projects %}
           <div class="col-md-6 text-center"><a class="work" href="{{site.baseurl}}{{project.url}}">
               <div class="work-img"><img src="{{site.baseurl}}/img/project_img/{{project.folder}}/{{project.cover}}" alt="Проект — {{project.title}}"></div>
@@ -39,6 +42,36 @@ layout: default
     </div>
   </div>
 </section>
+
+<!-- RELATED PROJECT -->
+<section class="works related">
+  <div class="container">
+    <div class="row text-center justify-content-md-center">
+      <div class="col-md-10">
+        <h1 class="slogan">{{page.related_heading}}</h1>
+        <h6 class="subheading">{{page.related_subheading}}</h6>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-10">
+        <div class="row">
+
+          {% assign related_projects = (site.pages | where: "cat" , "related") %}
+          {% for related in related_projects %}
+          <div class="col-md-6 text-center"><a class="work" href="{{site.baseurl}}{{related.url}}">
+              <div class="work-img"><img src="{{site.baseurl}}/img/project_img/{{related.folder}}/{{related.cover}}" alt="Проект — {{related.title}}"></div>
+              <div class="info text-center">
+                <h3 class="work-name">{{related.title}}</h3>
+              </div></a></div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
 <section class="services">
   <div class="container">
     <div class="row justify-content-md-center">
@@ -56,6 +89,8 @@ layout: default
     </div>
   </div>
 </section>
+
+<!-- CLIENTS -->
 <section class="clients">
   <div class="clients-grid container">
     <div class="row text-center">
@@ -78,6 +113,7 @@ layout: default
   </div>
 </section>
 
+<!-- BLOG -->
 {% if site.posts.size > 0 %}
 <section class="post-list post-list-home">
   <div class="container">

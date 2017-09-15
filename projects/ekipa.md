@@ -2,6 +2,7 @@
 layout: project
 folder: ekipa
 permalink: ekipa
+cat: project
 
 title: Ekipa
 meta: Сайт футбольного агентства Ekipa. Для него был разработан минималистичный дизайн, свёрстаны адаптивные страницы, подготовлены шаблоны под Django-фреймворк.

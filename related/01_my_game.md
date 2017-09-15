@@ -1,17 +1,17 @@
 ---
 layout: project
-folder: media_mission
-permalink: media_mission
-cat: project
+folder: my_game
+permalink: my_game
+cat: related
 
-title: Медиа Цель
-meta: Посадочная страница группы программистов «Медиа Цель»
+title: Моя игра
+meta: Айдентика для youtube-канала «Моя игра»
 
-cover: mediamission_cover.jpg
-customer: Медиа Цель
-src: https://mediami.ru
-role: Брендинг, веб-дизайн
-description: Посадочная страница для веб-студии «Медиа Цель». Особенностью проекта были интересные и уникальные требования заказчика, которые, на мой взгляд, удалось удовлетворить.
+cover: mygame.jpg
+customer: Моя игра
+src: https://www.youtube.com/channel/UC0IpAAMsZpx9KUGr06j-S9Q
+role: Айдентика, графический дизайн, оформление соц. сетей
+description: Оформление видео-роликов и канала о спорте «Моя игра»
 ---
 
 ##### Задание (дословно)
@@ -43,9 +43,8 @@ description: Посадочная страница для веб-студии «
 ![Медиа цель - скриншот 5]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_5.png)
 
 ##### Результат
-![Медиа цель - скриншот 6]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_6.png)
-![Медиа цель - скриншот 7]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_7.png)
-![Медиа цель - скриншот 8]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_8.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l9fFZRBt6uA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ##### Отзыв клиента
 > Павел, большое спасибо, всё классно, это даже лучше, чем мы хотели. Спасибо!
