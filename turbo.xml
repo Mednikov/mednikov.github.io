@@ -1,6 +1,7 @@
 ---
 layout: null
 ---
+
 <rss
   xmlns:yandex="http://news.yandex.ru"
   xmlns:media="http://search.yahoo.com/mrss/"
@@ -8,8 +9,28 @@ layout: null
   version="2.0">
 
   <channel>
-      
-      {% include ya-turbo.html %}
+      <title>{{site.title | xml_escape}}</title>
+      <link>{{site.baseurl}}</link>
+      <description>{{site.description | xml_escape}}</description>
+
+      {% if site.posts.size > 0 %}
+        {% for post in site.posts %}
+        <item turbo="true">
+          <title>{{post.title | xml_escape}}</title>
+          <link>{{site.baseurl}}{{post.url}}</link>
+          <description>{{post.meta | xml_escape}}</description>
+          <turbo:content>
+              <![CDATA[
+                <header>
+                    <h1>{{post.title | xml_escape}}</h1>
+                </header>
+                {{post.content | xml_escape}}
+              ]]>
+          </turbo:content>
+          <pubDate>{{post.date | date_to_rfc822}}</pubDate>
+        </item>
+        {% endfor %}
+      {% endif %}
       
   </channel>
 </rss>
