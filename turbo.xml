@@ -13,6 +13,40 @@ layout: null
       <link>{{site.url}}</link>
       <description>{{site.description}}</description>
 
+      {% assign index = (site.pages | where: "layout" , "home") %}
+      {% for home in index %}
+      <item turbo="true">
+        <title>{{home.title}}</title>
+        <link>{{site.url}}{{home.url}}</link>
+        <description>{{home.meta}}</description>
+        <turbo:content>
+            <![CDATA[
+              <header>
+                  <h1>{{home.title}}</h1>
+              </header>
+              {{home.content}}
+            ]]>
+        </turbo:content>
+      </item>
+      {% endfor %}
+
+     {% assign projects = (site.pages | where: "layout" , "project") %}
+     {% for project in projects %}
+     <item turbo="true">
+       <title>{{project.title}}</title>
+       <link>{{site.url}}{{project.url}}</link>
+       <description>{{project.meta}}</description>
+       <turbo:content>
+           <![CDATA[
+             <header>
+                 <h1>{{project.title}}</h1>
+             </header>
+             {{project.content}}
+           ]]>
+       </turbo:content>
+     </item>
+     {% endfor %}
+
       {% if site.posts.size > 0 %}
         {% for post in site.posts %}
         <item turbo="true">
