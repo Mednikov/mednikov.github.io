@@ -35,6 +35,9 @@
     <meta name="twitter:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}" />
     <meta name="twitter:description" content="{% if page.meta %} {{page.meta}} {% else %} {{site.description}} {% endif %}">
     <meta name="twitter:image" content="{{site.baseurl}}/img/og.jpg" />
+    
+    <!-- rss feed -->
+    {% feed_meta %}
 
     <!-- Yandex tableau -->
     <meta name="yandex-tableau-widget" content="logo={{site.baseurl}}/img/tableau.png, color=#f5f2f9" />
