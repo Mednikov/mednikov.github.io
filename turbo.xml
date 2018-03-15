@@ -9,28 +9,11 @@ layout: null
   version="2.0">
 
   <channel>
-      <title>{{site.title}}</title>
-      <link>{{site.url}}</link>
-      <description>{{site.description}}</description>
+    <title>{{site.title}}</title>
+    <link>{{site.url}}</link>
+    <description>{{site.description}}</description>
 
-      {% assign index = (site.pages | where: "layout" , "default") %}
-      {% for home in index %}
-      <item turbo="true">
-        <title>{{home.title}}</title>
-        <link>{{site.url}}{{home.url}}</link>
-        <description>{{home.meta}}</description>
-        <turbo:content>
-            <![CDATA[
-              <header>
-                  <h1>{{home.title}}</h1>
-              </header>
-              {{home.content}}
-            ]]>
-        </turbo:content>
-      </item>
-      {% endfor %}
-
-     {% assign projects = (site.pages | where: "layout" , "project") %}
+    {% assign projects = (site.pages | where: "layout" , "project") %}
      {% for project in projects %}
      <item turbo="true">
        <title>{{project.title}}</title>
