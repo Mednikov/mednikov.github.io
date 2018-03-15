@@ -13,7 +13,7 @@ layout: null
       <link>{{site.url}}</link>
       <description>{{site.description}}</description>
 
-      {% assign index = (site.pages | where: "layout" , "home") %}
+      {% assign index = (site.pages | where: "layout" , "default") %}
       {% for home in index %}
       <item turbo="true">
         <title>{{home.title}}</title>
