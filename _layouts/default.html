@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>
-      {% if page.title %}
-        {{page.title}} / {{site.title}}
+      {% if page.title_tab %}
+        {{page.title_tab}}
+      {% elsif page.title %}
+        {{page.title}}
       {% else %}
         {{site.title}}
       {% endif %}
