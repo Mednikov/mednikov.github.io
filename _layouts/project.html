@@ -22,9 +22,17 @@ layout: default
             <p class="descr-heading">Заказчик</p>
             <p>{{page.customer}}</p>
             {% endif %}
+            {% if page.agency %}
+            <p class="descr-heading">Агентство</p>
+              {% if page.agency_url %}
+              <p><a href="{{page.agency_url}}" target="_blank">{{page.agency}}</a></p>
+              {% else %}
+              <p>{{page.agency}}</p>
+              {% endif %}
+            {% endif %}
             {% if page.src %}
             <p class="descr-heading">Ссылка на проект</p>
-            <p><a href="{{page.src}}">{{page.src}}</a></p>
+            <p><a href="{{page.src}}" target="_blank">{{page.src}}</a></p>
             {% endif %}
             {% if page.role %}
             <p class="descr-heading">Роль в проекте</p>
