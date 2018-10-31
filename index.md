@@ -15,7 +15,7 @@ services:
   - Дизайн печатной продукции
 
 clients_heading: Клиенты
-clients_subheading: Организации, с которыми работали вместе
+clients_subheading: Организации, с которыми работал
 
 blog_heading: Статьи
 blog_subheading: Ответы на вопросы и различные публикации по теме веб-дизайна

@@ -37,6 +37,11 @@ timezone: Europe/Moscow
 paginate: 8
 paginate_path: "/blog/page:num/"
 
+# Collections settings
+collections:
+  projects:
+    output: true
+
 # Build settings
 markdown: kramdown
 theme: minima

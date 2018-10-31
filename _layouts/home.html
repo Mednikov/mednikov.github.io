@@ -25,8 +25,7 @@ layout: default
       <div class="col-md-10">
         <div class="row">
 
-          {% assign projects = (site.pages | where: "layout" , "project") %}
-          {% for project in projects %}
+          {% for project in site.projects %}
           <div class="col-md-6 text-center"><a class="work" href="{{site.baseurl}}{{project.url}}">
               <div class="work-img"><img src="{{site.baseurl}}/img/project_img/{{project.folder}}/{{project.cover}}" alt="Проект — {{project.title}}"></div>
               <div class="info text-center">
@@ -67,11 +66,11 @@ layout: default
     <div class="row justify-content-md-center">
       <div class="col-md-10">
         <div class="row justify-content-around align-items-center">
-          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/minfin.png" alt=""></div>
-          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/aiesec.png" alt=""></div>
-          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/rosatom.png" alt=""></div>
-          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/karo_logo.png" alt=""></div>
-          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/loko.png" alt=""></div>
+          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/minfin.png" alt="Министерство финансов Российской Федерации"></div>
+          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/aiesec.png" alt="AIESEC"></div>
+          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/rosatom.png" alt="Росатом"></div>
+          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/karo_logo.png" alt="Каро фильм"></div>
+          <div class="col-4 col-sm-4 col-md-2 text-center"><img src="{{site.baseurl}}/assets/loko.png" alt="ФК Локомотив"></div>
         </div>
       </div>
     </div>
