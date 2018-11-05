@@ -184,3 +184,62 @@ _12.07.2018 UPD// Они его, наконец, сами поменяли_
 
 ##### #027 — Dropdown / Выпадающий список
 ![#027 — Dropdown / Выпадающий список]({{site.baseurl}}/img/project_img/{{page.folder}}/027-drop-down.gif)
+
+
+##### #028 — Contact Us / Контакты
+Поигрался с Material Design.
+![#028 — Contact Us / Контакты]({{site.baseurl}}/img/project_img/{{page.folder}}/028-contact-us.png)
+
+
+##### #029 — Map / Карта
+Решил сделать чуть интереснее на примере приложения поиска баров.
+![#029 — Map / Карта]({{site.baseurl}}/img/project_img/{{page.folder}}/029-map.png)
+
+
+##### #030 — Pricing / Цены
+![#030 — Pricing / Цены]({{site.baseurl}}/img/project_img/{{page.folder}}/030-pricing.png)
+
+
+##### #031 — File Upload / Загрузка файлов
+![#031 — File Upload / Загрузка файлов]({{site.baseurl}}/img/project_img/{{page.folder}}/031-file-upload.png)
+
+
+##### #032 — Crowdfunding Campaign / Краудфандинговая кампания
+![#032 — Crowdfunding Campaign / Краудфандинговая кампания]({{site.baseurl}}/img/project_img/{{page.folder}}/032-crowdfunding-campaign.png)
+
+
+##### #033 — Customize Product / Кастомизация продукта
+![#033 — Customize Product / Кастомизация продукта]({{site.baseurl}}/img/project_img/{{page.folder}}/033-customize-product.png)
+
+
+##### #034 — Car Interface / Интерфейс в автомобиле
+Немножко пофантазировал. Уважаемая Лада, не благодарите :wink:
+![#034 — Car Interface / Интерфейс в автомобиле]({{site.baseurl}}/img/project_img/{{page.folder}}/034-car-interface.png)
+
+
+##### #035 — Blog Post / Статья в блоге
+![#035 — Blog Post / Статья в блоге]({{site.baseurl}}/img/project_img/{{page.folder}}/035-blog-post.png)
+
+
+##### #036 — Special Offer / Специальное предложение
+Шатаут молодым отечественным производителям!
+![#036 — Special Offer / Специальное предложение]({{site.baseurl}}/img/project_img/{{page.folder}}/036-special-offer.png)
+
+
+##### #037 — Weather / Погода
+Сделал для себя, поэтому отдал предпочтение подробному прогнозу на день, а не на неделю.
+![#037 — Weather / Погода]({{site.baseurl}}/img/project_img/{{page.folder}}/037-weather.png)
+
+
+##### #038 — Calendar / Календарь
+Немножко ностальгии по отрывным календарям.
+![#038 — Calendar / Календарь]({{site.baseurl}}/img/project_img/{{page.folder}}/038-calendar.png)
+
+
+##### #039 — Testimonials / Отзывы
+![#039 — Testimonials / Отзывы]({{site.baseurl}}/img/project_img/{{page.folder}}/039-testimonials.png)
+
+
+##### #040 — Recipe / Рецепт
+Немножко ностальгии по Стамбулу.
+![#040 — Recipe / Рецепт]({{site.baseurl}}/img/project_img/{{page.folder}}/040-recipe.png)
