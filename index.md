@@ -19,5 +19,8 @@ clients_subheading: Организации, с которыми работал
 
 blog_heading: Статьи
 blog_subheading: Ответы на вопросы и различные публикации по теме веб-дизайна
+
+sideprojects_heading: Прочие проекты
+sideprojects_subheading: Небольшие проекты
 ---
 

@@ -101,3 +101,26 @@ layout: default
   </div>
 </section>
 {% endif %}
+
+{% if site.sideprojects.size > 0 %}
+<section class="post-list post-list-home border-0">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-10 text">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <h6 class="title mt-0"><a href="{{site.baseurl}}sideprojects/">{{page.sideprojects_heading}}</a></h6>
+            <h6 class="subheading mt-0">{{page.sideprojects_subheading}}</h6>
+          </div>
+          {% for sideproject in site.sideprojects limit:3 %}
+          <div class="post-item col-12 col-sm-6 col-md-3">
+            <a href="{{site.baseurl}}{{sideproject.url}}">{{sideproject.title}}</a>
+            <p class="meta">{{sideproject.meta}}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

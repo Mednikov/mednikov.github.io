@@ -41,6 +41,8 @@ paginate_path: "/blog/page:num/"
 collections:
   projects:
     output: true
+  sideprojects:
+    output: true
 
 # Build settings
 markdown: kramdown
