@@ -110,12 +110,15 @@ layout: default
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <h6 class="title mt-0"><a href="{{site.baseurl}}sideprojects/">{{page.sideprojects_heading}}</a></h6>
-            <h6 class="subheading mt-0">{{page.sideprojects_subheading}}</h6>
+            <h6 class="subheading">{{page.sideprojects_subheading}}</h6>
           </div>
           {% for sideproject in site.sideprojects limit:3 %}
           <div class="post-item col-12 col-sm-6 col-md-3">
-            <a href="{{site.baseurl}}{{sideproject.url}}">{{sideproject.title}}</a>
-            <p class="meta">{{sideproject.meta}}</p>
+            <a href="{{site.baseurl}}{{sideproject.url}}">
+              <img src="{{site.baseurl}}/img/sideproject_img/{{sideproject.folder}}/{{sideproject.cover}}" class="m-0" alt="Проект — {{project.title}}">
+              <!-- {{sideproject.title}} -->
+            </a>
+            <!-- <p class="meta">{{sideproject.meta}}</p> -->
           </div>
           {% endfor %}
         </div>
