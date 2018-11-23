@@ -4,7 +4,7 @@ folder: stickers
 permalink: stickers
 
 title: Стикеры Telegram
-meta: Посадочная страница группы программистов «Медиа Цель»
+meta: Наборы стикеров для Telegram
 
 cover: stickers_cover.png
 role: Графический дизайн, иллюстрация
