@@ -12,15 +12,11 @@
 
 // $black:         #222;
 $white:         #fff;
+$link-border:   #ADADD6;
 
-$white-blue:    #f5f3f9;
-
-$brand:         #49089a;
-$light-blue:    #9f84d4;
-
-$grey:          #ddd;
-
-$black:         #222;
+$brand:         #4747E6;
+$brand-dark:    #11163C;
+$brand-white:   #F8F8FF;
 
 
 
@@ -109,48 +105,17 @@ $wrap:      1200px;
 
 
 @media (max-width: 1199px) {
-  .works{
-    .work{
-      width: 370px;
-      height: 278px;
-      margin-bottom: 30px;
-      &:hover,
-      &:focus{
-        .info{
-          margin-top: 10px;
-          margin-left: 10px;
-        }
-      }
-    }
-  }
-  .cover{
-    height: 278px;
-  }
+  
 }
 
 @media (max-width: 991px) {
-  .works{
-    .work{
-      width: 270px;
-      height: 203px;
-    }
-  }
-  .cover{
-    height: 203px;
-  }
+  
 }
 
 @media (max-width: 767px) {
-  .cover{
-    height: initial;
-  }
+  
 }
 
 @media (max-width: 575px) {
-  h1, .slogan{font-size: 24px;}
-  h2{font-size: 22px;}
-  h3, .subheading{font-size: 20px;}
-  h4, .subheading{font-size: 18px;}
-  h5{font-size: 16px;}
-  h6{font-size: 14px;}
+  
 }

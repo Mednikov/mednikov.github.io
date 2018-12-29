@@ -18,7 +18,7 @@ input,
 input.form-control,
 textarea.form-control{
     outline:none;
-    // border: 2px solid $light-blue;
+    // border: 2px solid $brand;
     // @include border-radius(0);
     color: $brand;
 }
@@ -43,7 +43,7 @@ button:active, textarea:active,{
         &::-moz-placeholder,
         &:-ms-input-placeholder,
         &:-moz-placeholder{
-            color: $light-blue !important;
+            color: $brand !important;
         }
     }
     .modal-header{
@@ -56,7 +56,7 @@ button:active, textarea:active,{
         }
     }
     .modal-footer{
-        background-color: $white-blue;
+        background-color: $brand-white;
     }
 }
 
@@ -77,10 +77,10 @@ button:active, textarea:active,{
 
 .btn{
     display: inline-block;
-    background-color: transparent;
+    background-color: $brand;
     margin: 0 auto;
-    padding: 10px 30px;
-    color: $brand;
+    padding: .75rem 2rem;
+    color: $white;
     text-decoration: none;
     border: 2px solid $brand;
     @include border-radius(40px);
@@ -93,8 +93,9 @@ button:active, textarea:active,{
 
     &:hover,
     &:focus{
-        background-color: $brand;
+        background-color: $brand-dark;
         color: $white;
+        border-color: $brand-dark;
         @include animation(.15s);
     }
 }
@@ -104,12 +105,12 @@ img {
 }
 
 h1{
-    @include fontcaption;
+    @include fontstack;
     // margin: 2*$margin 0;
     // font-size: 36px;
     font-weight: bold;
     // line-height: normal;
-    color: $brand;
+    color: $brand-dark;
 
     // p + &{
     //     margin-top: 4*$margin;
@@ -142,14 +143,14 @@ p{
 
 a{
     // text-decoration: underline;
-    color: $brand;
-    border-bottom: 1px solid $brand;
+    color: $brand-dark;
+    border-bottom: 1px solid $brand-dark;
 
     &:hover,
     &:focus{
-        color: $light-blue;
+        color: $brand;
         text-decoration: none;
-        border-color: $light-blue;
+        border-color: $brand;
     }
 }
 
@@ -167,7 +168,7 @@ small, .small{
 
 hr{
     width: 100px;
-    border-top: 1px solid $light-blue;
+    border-top: 1px solid $brand;
 
     // &+p{
     //     font-size: 24px;
@@ -249,7 +250,7 @@ hr{
             top: -68px;
             left: -20px;
             font-size: 180px;
-            color: $white-blue;
+            color: $brand-white;
             z-index: -1;
         }
     }
@@ -309,7 +310,7 @@ img.emoji{
 // }
 
 .caption{
-    @include fontcaption;
+    @include fontstack;
     font-size: 48px;
     font-weight: bold;
 }
@@ -317,7 +318,6 @@ img.emoji{
 .subheading{
     @include fontstack;
     font-weight: 300;
-    color: $light-blue;
     margin-bottom: 20px;
     line-height: inherit;
 }
@@ -343,7 +343,7 @@ img.emoji{
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    color: $light-blue;
+    color: $brand;
     letter-spacing: .05em;
 
     -webkit-transform: rotate(-90deg);
@@ -363,7 +363,7 @@ img.emoji{
     font-size: 13px;
     padding: .75rem 0;
     margin-bottom: 0;
-    background-color: $white-blue;
+    background-color: $brand-white;
 }
 
 // /* GRID */
@@ -699,7 +699,7 @@ img.emoji{
 }
 
 .highlight{
-    border-left: 10px solid $white-blue;
+    border-left: 10px solid $brand-white;
     padding-left: 20px;
 }
 
