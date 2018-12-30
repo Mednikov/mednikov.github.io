@@ -69,9 +69,18 @@ section{
 		padding-bottom: 60px;
 	}
 
+	.subheading{
+		margin-bottom: 0;
+	}
+
+
 	&.hero{
 		padding-top: 0;
 		padding-bottom: 32px;
+
+		.subheading{
+			margin-bottom: 1em;
+		}
 
 		.illustration{
 			position: relative;
@@ -101,6 +110,7 @@ section{
 		}
 	}
 
+
 	&.works{
 		background-color: $brand;
 
@@ -118,6 +128,10 @@ section{
 			padding-top: 15px;
 			padding-bottom: 15px;
 			border-bottom: none;
+			-webkit-transition: none;
+			   -moz-transition: none; 
+			     -o-transition: none; 
+			        transition: none;
 
 			transform-style: preserve-3d;
       transform: perspective(1500px);
@@ -155,7 +169,115 @@ section{
 			}
 		}
 	}
+
+
+	&.services{
+		.service{
+			margin-bottom: 2rem;
+
+			img{
+				width: 80px;
+				height: 80px;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+
+
+	&.clients{
+		background-color: $brand-dark;
+
+		.slogan,
+		.subheading{
+			color: $white;
+		}
+
+		.client{
+			margin-bottom: 2rem;
+		}
+	}
+
+
+	&.post-list{
+		.post-item{
+			.post-item-card{
+				display: block;
+				height: 300px;
+				padding: 40px;
+				margin-bottom: 2rem;
+				background: $brand;
+				color: $white;
+				border-bottom: none;
+				overflow: hidden;
+				@include animation(.15s);
+
+				.title{
+					display: inline;
+					border-bottom: 1px solid transparent;
+					@include animation(.15s);
+				}
+
+				&:hover,
+				&:focus{
+					// background: linear-gradient(45deg, $brand-gradient 0%, $brand 100%);
+					box-shadow: 0px 10px 30px rgba(71,71,230, .25);
+
+					.title{
+						border-bottom-color: $white;
+					}
+				}
+			}
+		}
+
+		.post-item-big{
+			.post-item-card{
+				.title{
+					font-size: 1.5rem;
+					line-height: 1.5em;
+				}
+			}
+		}
+	}
+
+
+	&.contact{
+		background-color: $brand-white;
+	}
 }
 
+
+footer{
+	padding: 2rem;
+	background-color: $brand-dark;
+	color: $white;
+	line-height: 1rem;
+
+	.icon-stack{
+		display: inline-block;
+		margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li{
+    	float: left;
+    	margin-right: 20px;
+
+    	a{
+    		font-size: 1rem;
+    		color: $white;
+    		border: none;
+
+    		&:hover,
+    		&:focus{
+    			color: $brand;
+    		}
+    	}
+
+    	&:last-child{
+    	    margin-right: 0;
+    	}
+    }
+	}
+}
 
 

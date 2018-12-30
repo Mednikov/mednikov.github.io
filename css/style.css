@@ -90,11 +90,19 @@ p {
 
 a {
   color: #11163C;
-  border-bottom: 1px solid #11163C; }
+  border-bottom: 1px solid #11163C;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; }
   a:hover, a:focus {
     color: #4747E6;
     text-decoration: none;
     border-color: #4747E6; }
+  a.bd-dashed {
+    border-bottom-style: dashed; }
+  a.bd-dotted {
+    border-bottom-style: dotted; }
 
 b, strong {
   font-weight: bolder; }
@@ -190,17 +198,6 @@ img.emoji {
   font-weight: 300;
   margin-bottom: 20px;
   line-height: inherit; }
-
-.icon-stack {
-  display: inline-block;
-  padding: 0;
-  list-style-type: none;
-  font-size: 24px; }
-  .icon-stack li {
-    float: left;
-    margin-right: 20px; }
-    .icon-stack li:last-child {
-      margin-right: 0; }
 
 .affix {
   top: 65px; }
@@ -542,9 +539,13 @@ section {
   padding: 80px 2rem; }
   section .section-heading {
     padding-bottom: 60px; }
+  section .subheading {
+    margin-bottom: 0; }
   section.hero {
     padding-top: 0;
     padding-bottom: 32px; }
+    section.hero .subheading {
+      margin-bottom: 1em; }
     section.hero .illustration {
       position: relative;
       width: 90%;
@@ -575,6 +576,10 @@ section {
       padding-top: 15px;
       padding-bottom: 15px;
       border-bottom: none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      transition: none;
       transform-style: preserve-3d;
       transform: perspective(1500px); }
       section.works .work .work-img {
@@ -600,5 +605,69 @@ section {
           section.works .work .work-img-inner .work-img-text h1, section.works .work .work-img-inner .work-img-text h2, section.works .work .work-img-inner .work-img-text h3, section.works .work .work-img-inner .work-img-text h4, section.works .work .work-img-inner .work-img-text h5, section.works .work .work-img-inner .work-img-text h6, section.works .work .work-img-inner .work-img-text h2, section.works .work .work-img-inner .work-img-text h3, section.works .work .work-img-inner .work-img-text h4, section.works .work .work-img-inner .work-img-text h5, section.works .work .work-img-inner .work-img-text h6, section.works .work .work-img-inner .work-img-text p {
             margin-bottom: 0;
             color: #fff; }
+  section.services .service {
+    margin-bottom: 2rem; }
+    section.services .service img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1.5rem; }
+  section.clients {
+    background-color: #11163C; }
+    section.clients .slogan,
+    section.clients .subheading {
+      color: #fff; }
+    section.clients .client {
+      margin-bottom: 2rem; }
+  section.post-list .post-item .post-item-card {
+    display: block;
+    height: 300px;
+    padding: 40px;
+    margin-bottom: 2rem;
+    background: #4747E6;
+    color: #fff;
+    border-bottom: none;
+    overflow: hidden;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out; }
+    section.post-list .post-item .post-item-card .title {
+      display: inline;
+      border-bottom: 1px solid transparent;
+      -webkit-transition: all 0.15s ease-in-out;
+      -moz-transition: all 0.15s ease-in-out;
+      -o-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out; }
+    section.post-list .post-item .post-item-card:hover, section.post-list .post-item .post-item-card:focus {
+      box-shadow: 0px 10px 30px rgba(71, 71, 230, 0.25); }
+      section.post-list .post-item .post-item-card:hover .title, section.post-list .post-item .post-item-card:focus .title {
+        border-bottom-color: #fff; }
+  section.post-list .post-item-big .post-item-card .title {
+    font-size: 1.5rem;
+    line-height: 1.5em; }
+  section.contact {
+    background-color: #F8F8FF; }
+
+footer {
+  padding: 2rem;
+  background-color: #11163C;
+  color: #fff;
+  line-height: 1rem; }
+  footer .icon-stack {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none; }
+    footer .icon-stack li {
+      float: left;
+      margin-right: 20px; }
+      footer .icon-stack li a {
+        font-size: 1rem;
+        color: #fff;
+        border: none; }
+        footer .icon-stack li a:hover, footer .icon-stack li a:focus {
+          color: #4747E6; }
+      footer .icon-stack li:last-child {
+        margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */

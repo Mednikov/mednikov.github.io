@@ -62,7 +62,8 @@ layout: default
   </div>
 </section> -->
 
-<section class="works">
+<section class="works" id="works">
+
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-md-7 section-heading">
@@ -71,6 +72,7 @@ layout: default
       </div>
     </div>
   </div>
+
   <div class="container-fluid">
     <div class="row">
       {% for project in site.projects %}
@@ -91,11 +93,12 @@ layout: default
       {% endfor %}
     </div>
   </div>
+
 </section>
 
 
 
-<section class="services">
+<!-- <section class="services">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-md-3">
@@ -112,6 +115,7 @@ layout: default
     </div>
   </div>
 </section>
+
 <section class="clients">
   <div class="clients-grid container">
     <div class="row text-center">
@@ -132,9 +136,70 @@ layout: default
       </div>
     </div>
   </div>
+</section> -->
+
+<section class="services">
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-7 section-heading">
+        <h2 class="slogan">{{page.services_heading}}</h2>
+        <h6 class="subheading">{{page.services_subheading}}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-around">
+      {% for service in page.services %}
+      <div class="col col-sm-4 col-md-2 service">
+        {% for entry in service.icon %}
+        <img src="{{site.baseurl}}/img/home/{{entry.img}}" alt="{{service.name}}">
+        {% endfor %}
+        <p><strong>{{service.name}}</strong></p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
 </section>
 
-{% if site.posts.size > 0 %}
+
+<section class="clients">
+  <div class="container">
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-7 section-heading">
+        <h2 class="slogan">{{page.clients_heading}}</h2>
+        <h6 class="subheading">{{page.clients_subheading}}</h6>
+      </div>
+    </div>
+
+    <div class="row justify-content-around d-flex align-items-center">
+      <div class="col-4 col-md-2 client">
+        <img src="{{site.baseurl}}/img/home/mf@2x.png" alt="Минфин России">
+      </div>
+      <div class="col-4 col-md-3 client">
+        <img src="{{site.baseurl}}/img/home/aiesec@2x.png" alt="AIESEC">
+      </div>
+      <div class="col-4 col-md-2 client">
+        <img src="{{site.baseurl}}/img/home/rosatom@2x.png" alt="Росатом">
+      </div>
+      <div class="col-4 col-md-3 client">
+        <img src="{{site.baseurl}}/img/home/karo@2x.png" alt="Каро Фильм">
+      </div>
+      <div class="col-4 col-md-2 client">
+        <img src="{{site.baseurl}}/img/home/loko@2x.png" alt="ФК Локомотив">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- {% if site.posts.size > 0 %}
 <section class="post-list post-list-home">
   <div class="container">
     <div class="row justify-content-md-center">
@@ -147,7 +212,6 @@ layout: default
           {% for post in site.posts limit:3 %}
           <div class="post-item col-12 col-sm-6 col-md-3">
             <p class="date">{% include date.html %}</p>
-            <!-- <p class="date">{{post.date | date: "%d.%m.%Y"}}</p> -->
             <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
             <p class="meta">{{post.meta}}</p>
           </div>
@@ -157,9 +221,46 @@ layout: default
     </div>
   </div>
 </section>
-{% endif %}
+{% endif %} -->
 
-{% if site.sideprojects.size > 0 %}
+{% if site.posts.size > 0 %}
+<section class="post-list post-list-home">
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-7 section-heading">
+        <h2 class="slogan"><a href="{{site.baseurl}}blog/">{{page.blog_heading}}</a></h2>
+        <h6 class="subheading">{{page.blog_subheading}}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      {% for post in site.posts limit:3 %}
+      <div class="post-item col-12 
+      {% if forloop.index == 1 %}
+      col-sm-12 col-lg-6 post-item-big
+      {% else %}
+      col-sm-6 col-lg-3
+      {% endif %}
+      ">
+        <a href="{{site.baseurl}}{{post.url}}" class="post-item-card">
+          <p class="date">{% include date.html %}</p>
+          <p class="title"><strong>{{post.title}}</strong></p>
+          <!-- <p class="meta">{{post.meta}}</p> -->
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+{% endif %} 
+
+
+
+<!-- {% if site.sideprojects.size > 0 %}
 <section class="post-list post-list-home border-0">
   <div class="container">
     <div class="row justify-content-md-center">
@@ -173,9 +274,7 @@ layout: default
           <div class="post-item col-12 col-sm-6 col-md-3">
             <a href="{{site.baseurl}}{{sideproject.url}}">
               <img src="{{site.baseurl}}/img/sideproject_img/{{sideproject.folder}}/{{sideproject.cover}}" class="m-0" alt="Проект — {{project.title}}">
-              <!-- {{sideproject.title}} -->
             </a>
-            <!-- <p class="meta">{{sideproject.meta}}</p> -->
           </div>
           {% endfor %}
         </div>
@@ -183,4 +282,4 @@ layout: default
     </div>
   </div>
 </section>
-{% endif %}
+{% endif %} -->

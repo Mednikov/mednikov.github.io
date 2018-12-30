@@ -9,15 +9,25 @@ works_heading: Работы
 works_subheading: Каждый проект начинается с аналитики и исследования, в результате которого стараюсь получить максимально эффективный и удобный пользователю сервис, который выполняет поставленные бизнес-задачи.
 
 services_heading: Услуги
-services_subheading: Более 7 лет опыта в&nbsp;проектировании, дизайне, разработке веб-сайтов, мобильных приложений и&nbsp;много другого
+services_subheading: Работаю по нескольким направлениям в цифровой среде, предоставляя множество бизнес-решений.
 services:
-  - Веб-дизайн
-  - Front-end разработка
-  - UX/UI проектирование
-  - Разработка фирменного стиля
-  - Дизайн печатной продукции
+  - name: Веб-дизайн
+    icon:
+      - img: service-webdesign-icon.svg
+  - name: Front-end разработка
+    icon:
+      - img: service-frontend-icon.svg
+  - name: UX/UI проектирование
+    icon:
+      - img: service-ui-icon.svg
+  - name: Разработка фирменного стиля
+    icon:
+      - img: service-firstil-icon.svg
+  - name: Дизайн печатной продукции
+    icon:
+      - img: service-print-icon.svg
 
-clients_heading: Клиенты
+clients_heading: Мне доверяют
 clients_subheading: Организации, с&nbsp;которыми работал
 
 blog_heading: Статьи
