@@ -42,7 +42,7 @@ layout: default
 
 
 
-<section class="works">
+<!-- <section class="works">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-md-10">
@@ -60,7 +60,41 @@ layout: default
       </div>
     </div>
   </div>
+</section> -->
+
+<section class="works">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-7 section-heading">
+        <h2 class="slogan">{{page.works_heading}}</h2>
+        <h6 class="subheading">{{page.works_subheading}}</h6>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      {% for project in site.projects %}
+      <div class="col-md-6">
+        <a href="{{site.baseurl}}{{project.url}}" class="work" data-tilt data-tilt-axis="x" data-tilt-perspective="1500">
+          <div class="work-img">
+            <img src="{{site.baseurl}}/img/project_img/{{project.folder}}/{{project.cover}}" alt="Проект — {{project.title}}">
+            <div class="work-img-overlay"></div>
+            <div class="work-img-inner">
+              <div class="work-img-text">
+                <p>{{project.role}}</p>
+                <h4>{{project.title}}</h4>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
+
+
+
 <section class="services">
   <div class="container">
     <div class="row justify-content-md-center">
