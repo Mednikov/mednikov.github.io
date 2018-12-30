@@ -5,9 +5,12 @@ body{
     @include fontstack;
     color: $brand-dark;
     line-height: 1.5em;
+    background-color: $brand-dark;
 }
 
 header{
+	background-color: $white;
+
 	.navbar{
 		padding: 2rem;
 
@@ -64,6 +67,7 @@ section{
 	// padding-top: 80px;
 	// padding-bottom: 80px;
 	padding: 80px 2rem;
+	background-color: $white;
 
 	.section-heading{
 		padding-bottom: 60px;
@@ -71,6 +75,10 @@ section{
 
 	.subheading{
 		margin-bottom: 0;
+	}
+
+	&.page{
+		padding-top: 0;
 	}
 
 
@@ -277,6 +285,15 @@ footer{
     	    margin-right: 0;
     	}
     }
+	}
+}
+
+
+section{
+	&.post{
+		.date{
+			opacity: .5;
+		}
 	}
 }
 

@@ -109,7 +109,41 @@ $wrap:      1200px;
 }
 
 @media (max-width: 991px) {
-  
+  header{
+    .navbar{
+      .navbar-nav{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+
+        .nav-item{
+          padding-left: inherit;
+
+          .nav-link{
+            display: inline-block;
+            width: 300px;
+            margin-bottom: .5rem;
+            padding: .5em 1em;
+            background-color: $brand-white;
+            border-radius: 1em;
+            border: none;
+          }
+
+          &:hover{
+            .nav-link{
+              color: $brand;
+            }
+          }
+
+          &:last-child{
+            .nav-link{
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
