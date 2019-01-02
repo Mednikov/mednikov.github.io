@@ -197,7 +197,11 @@ img.emoji {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 0; }
+
+.pagination {
+  border-radius: 0; }
 
 .mt-10 {
   margin-top: 10px; }

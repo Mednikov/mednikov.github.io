@@ -34,7 +34,7 @@ dribbble_username: mednikov
 linkedin_username: mednikov
 
 timezone: Europe/Moscow
-paginate: 8
+paginate: 7
 paginate_path: "/blog/page:num/"
 
 # Collections settings
