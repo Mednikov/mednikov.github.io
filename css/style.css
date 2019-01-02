@@ -103,6 +103,12 @@ a {
     border-bottom-style: dashed; }
   a.bd-dotted {
     border-bottom-style: dotted; }
+  a .fa,
+  a .fas,
+  a .fab,
+  a .far {
+    padding-left: .25em;
+    padding-bottom: .125em; }
 
 b, strong {
   font-weight: bolder; }
@@ -202,6 +208,9 @@ img.emoji {
 
 .pagination {
   border-radius: 0; }
+
+.huge {
+  font-size: 5rem; }
 
 .mt-10 {
   margin-top: 10px; }
@@ -673,6 +682,15 @@ footer {
 
 section.post .date {
   opacity: .5; }
+
+.page-404-img {
+  max-height: 250px; }
+
+.project .descr {
+  margin-bottom: 60px; }
+  .project .descr .descr-heading {
+    margin-bottom: 0;
+    opacity: .5; }
 
 @media (max-width: 991px) {
   header .navbar .navbar-nav {

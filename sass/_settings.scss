@@ -160,6 +160,15 @@ a{
     &.bd-dotted{
         border-bottom-style: dotted;
     }
+
+    .fa,
+    .fas,
+    .fab,
+    .far{
+        padding-left: .25em;
+        padding-bottom: .125em;
+        // font-size: .75em;
+    }
 }
 
 b,strong{
@@ -371,6 +380,10 @@ img.emoji{
 
 .pagination{
     border-radius: 0;
+}
+
+.huge{
+    font-size: 5rem;
 }
 
 // /* GRID */
