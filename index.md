@@ -5,19 +5,35 @@ breadcrumb: Главная
 slogan: Павел Медников
 subheading: Веб-дизайнер и front-end разработчик
 
-services_heading: Услуги
-services_subheading: Более 7 лет опыта в проектировании, дизайне, разработке веб-сайтов, мобильных приложений и много другого
-services:
-  - Веб-дизайн
-  - Front-end разработка
-  - UX/UI проектирование
-  - Разработка фирменного стиля
-  - Дизайн печатной продукции
+works_heading: Работы
+works_subheading: Каждый проект начинается с аналитики и исследования, в результате которого стараюсь получить максимально эффективный и удобный пользователю сервис, который выполняет поставленные бизнес-задачи.
 
-clients_heading: Клиенты
-clients_subheading: Организации, с которыми работал
+services_heading: Услуги
+services_subheading: Работаю по нескольким направлениям в цифровой среде, предоставляя множество бизнес-решений.
+services:
+  - name: Веб-дизайн
+    icon:
+      - img: service-webdesign-icon.svg
+  - name: Front-end разработка
+    icon:
+      - img: service-frontend-icon.svg
+  - name: UX/UI проектирование
+    icon:
+      - img: service-ui-icon.svg
+  - name: Разработка фирменного стиля
+    icon:
+      - img: service-firstil-icon.svg
+  - name: Дизайн печатной продукции
+    icon:
+      - img: service-print-icon.svg
+
+clients_heading: Мне доверяют
+clients_subheading: Организации, с&nbsp;которыми работал
 
 blog_heading: Статьи
-blog_subheading: Ответы на вопросы и различные публикации по теме веб-дизайна
+blog_subheading: Ответы на вопросы и&nbsp;различные публикации по&nbsp;теме веб-дизайна
+
+sideprojects_heading: Сторонние проекты
+sideprojects_subheading: Собственные разработки и&nbsp;бесплатные раздачи ништяков
 ---
 

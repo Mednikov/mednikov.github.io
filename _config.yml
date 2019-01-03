@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://pavelmednikov.com # the base hostname & protocol for your site, e.g. http://example.com
 enforce_ssl: pavelmednikov.com
 
-author: Павел Медников
+author: Павел&nbsp;Медников
 subtitle: Веб-дизайнер и front-end разработчик
 
 fb_app_id: 222928808209319
@@ -34,12 +34,14 @@ dribbble_username: mednikov
 linkedin_username: mednikov
 
 timezone: Europe/Moscow
-paginate: 8
+paginate: 7
 paginate_path: "/blog/page:num/"
 
 # Collections settings
 collections:
   projects:
+    output: true
+  sideprojects:
     output: true
 
 # Build settings
