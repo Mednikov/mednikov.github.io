@@ -175,12 +175,25 @@ $wrap:      1200px;
   }
 
   section{
-    // &.hero{
-    //   overflow: hidden;
-    //   .illustration{
-    //     width: 240%;
-    //   }
-    // }
+    &.hero{
+      overflow: hidden;
+
+      .illustration{
+        width: 600px;
+        height: 250px;
+        transform-style: initial;
+        transform: initial;
+
+        img{
+          // position: static;
+          width: 600px;
+          height: 250px;
+          max-width: initial;
+          left: -40%;
+        }
+      }
+    }
+    
     &.contact{
       h3{
         font-size: 1.5rem;

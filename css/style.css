@@ -736,6 +736,18 @@ section.contact-form .form-group .form-control:focus {
   header .navbar .navbar-nav .nav-item .nav-link {
     width: 100%; }
 
+  section.hero {
+    overflow: hidden; }
+    section.hero .illustration {
+      width: 600px;
+      height: 250px;
+      transform-style: initial;
+      transform: initial; }
+      section.hero .illustration img {
+        width: 600px;
+        height: 250px;
+        max-width: initial;
+        left: -40%; }
   section.contact h3 {
     font-size: 1.5rem; }
   section.post-list .post-item .post-item-card {

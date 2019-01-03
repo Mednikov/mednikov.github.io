@@ -106,14 +106,14 @@ section{
 				left: 0;
 
 				&.card-img-2{
-		    	transform: translateZ(50px);
-		    }
-		    &.card-img-3{
-		    	transform: translateZ(100px);
-		    }
-		    &.card-img-4{
-		    	transform: translateZ(150px);
-		    }
+		    		transform: translateZ(50px);
+			    }
+			    &.card-img-3{
+			    	transform: translateZ(100px);
+			    }
+			    &.card-img-4{
+			    	transform: translateZ(150px);
+			    }
 			}
 		}
 	}
