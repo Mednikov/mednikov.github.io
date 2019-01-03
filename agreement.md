@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /agreement
+permalink: /agreement/
 ---
 
 

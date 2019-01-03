@@ -38,7 +38,7 @@ permalink: /contact/
 			  <textarea name="message" class="form-control" id="formMessage" rows="3" placeholder="Опишите проект" required=""></textarea>
 			</div>
 			<div class="form-group">
-			  <p class="small mb-0">Нажимая на&nbsp;кнопку «Отправить сообщение», вы&nbsp;даёте <a href="{{site.baseurl}}/agreement">согласие</a> на&nbsp;обработку своих персональных&nbsp;данных.</p> 
+			  <p class="small mb-0">Нажимая на&nbsp;кнопку «Отправить сообщение», вы&nbsp;даёте <a href="{{site.baseurl}}/agreement/">согласие</a> на&nbsp;обработку своих персональных&nbsp;данных.</p> 
 			</div>
 
 			<input type="hidden" name="_subject" value="Весточка с сайта-портфолио">
