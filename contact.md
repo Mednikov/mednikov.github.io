@@ -2,7 +2,7 @@
 layout: default
 
 title: Заявка
-permalink: /contact
+permalink: /contact/
 ---
 
 
