@@ -729,5 +729,19 @@ section.contact-form .form-group .form-control:focus {
         color: #4747E6; }
       header .navbar .navbar-nav .nav-item:last-child .nav-link {
         margin-bottom: 0; } }
+@media (max-width: 575px) {
+  html {
+    font-size: .75rem; }
+
+  header .navbar .navbar-nav .nav-item .nav-link {
+    width: 100%; }
+
+  section.contact h3 {
+    font-size: 1.5rem; }
+  section.post-list .post-item .post-item-card {
+    height: auto; }
+
+  img.cover {
+    height: auto !important; } }
 
 /*# sourceMappingURL=style.css.map */
