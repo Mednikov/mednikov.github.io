@@ -175,12 +175,12 @@ $wrap:      1200px;
   }
 
   section{
-    &.hero{
-      overflow: hidden;
-      .illustration{
-        width: 240%;
-      }
-    }
+    // &.hero{
+    //   overflow: hidden;
+    //   .illustration{
+    //     width: 240%;
+    //   }
+    // }
     &.contact{
       h3{
         font-size: 1.5rem;
