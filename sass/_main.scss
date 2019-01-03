@@ -251,6 +251,12 @@ section{
 	&.contact{
 		background-color: $brand-white;
 	}
+
+	&.about{
+		.subheading{
+			line-height: 1.5em;
+		}
+	}
 }
 
 
@@ -297,6 +303,34 @@ section{
 	}
 }
 
+
+section{
+	&.cv{
+		background-color: $brand-white;
+		border-bottom: 4px solid $white;
+
+		h1,h2,h3,h4,h5,h6{
+			line-height: 1.5em;
+		}
+
+		.cv-heading{
+			opacity: .5;
+		}
+	}
+}
+
+
+section{
+	&.contact-form{
+		.form-group{
+			.form-control{
+				&:focus{
+					border: 1px solid $brand;
+				}
+			}
+		}
+	}
+}
 
 
 .page-404-img{
