@@ -37,17 +37,18 @@ permalink: /contact/
 			  <label for="formMessage">Текст сообщения*</label>
 			  <textarea name="message" class="form-control" id="formMessage" rows="3" placeholder="Опишите проект" required=""></textarea>
 			</div>
-			<div class="form-group">
-			  <p class="small mb-0">Нажимая на&nbsp;кнопку «Отправить сообщение», вы&nbsp;даёте <a href="{{site.baseurl}}/policy/">согласие</a> на&nbsp;обработку своих персональных&nbsp;данных.</p> 
-			</div>
 
 			<input type="hidden" name="_subject" value="Весточка с сайта-портфолио">
 			<!-- <input type="hidden" name="__redirect" value="http://pavelmednikov.com/thanks"> -->
 			<input type="hidden" name="_next" value="http://pavelmednikov.com/thanks">
 			<input type="hidden" name="_language" value="ru" />
 
-			<div class="form-group text-center mb-0">
+			<div class="form-group text-center">
 				<input class="btn" type="submit" value="Отправить заявку"  onclick="yaCounter44663041.reachGoal('make_order'); return true;">
+			</div>
+
+			<div class="form-group mb-0">
+			  <p class="small mb-0">Нажимая на&nbsp;кнопку «Отправить заявку», вы&nbsp;даёте согласие на&nbsp;обработку персональных&nbsp;данных и&nbsp;соглашаетесь с&nbsp;<a href="{{site.baseurl}}/policy/">политикой конфиденциальности</a>.</p> 
 			</div>
 
       	</form>
