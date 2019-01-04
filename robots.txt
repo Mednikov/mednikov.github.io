@@ -5,4 +5,5 @@ Disallow: /google7d24995e3e09b4db.html
 Disallow: /thanks
 Disallow: /404
 Disallow: /agreement
+Disallow: /policy/
 Host: https://pavelmednikov.com
