@@ -146,6 +146,7 @@ section{
 
 			.work-img{
 				position: relative;
+				display: inline-block; /* REMOVE BORDERS */
 			}
 			.work-img-overlay{
 				position: absolute;

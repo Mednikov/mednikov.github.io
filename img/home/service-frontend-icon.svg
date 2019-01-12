@@ -5,14 +5,8 @@
         fill: #d6d6ea;
       }
 
-      .cls-2, .cls-3 {
+      .cls-2 {
         fill: #adadd6;
-      }
-
-      .cls-3 {
-        font-size: 36px;
-        font-family: Montserrat-Bold, Montserrat;
-        font-weight: 700;
       }
     </style>
   </defs>
@@ -22,6 +16,6 @@
     <circle id="Ellipse_16" data-name="Ellipse 16" class="cls-1" cx="2.908" cy="2.908" r="2.908" transform="translate(437.653 2396.653)"/>
     <circle id="Ellipse_17" data-name="Ellipse 17" class="cls-1" cx="2.908" cy="2.908" r="2.908" transform="translate(445.795 2396.653)"/>
     <circle id="Ellipse_18" data-name="Ellipse 18" class="cls-1" cx="2.908" cy="2.908" r="2.908" transform="translate(453.937 2396.653)"/>
-    <text id="_" data-name="&lt;/&gt;" class="cls-3" transform="translate(444 2451)"><tspan x="0" y="0">&lt;/&gt;</tspan></text>
+    <path id="Path_49" data-name="Path 49" class="cls-2" d="M19.368-16.992,7.38-12.6,19.368-8.244v4.5L2.232-10.26v-4.68l17.136-6.516Zm12.888-13.32h5L25.38,3.6h-5ZM55.044-14.94v4.68L37.908-3.744v-4.5L49.9-12.6,37.908-16.992v-4.464Z" transform="translate(444 2451)"/>
   </g>
 </svg>
