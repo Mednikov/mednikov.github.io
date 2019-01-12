@@ -126,10 +126,11 @@ $wrap:      1200px;
             display: inline-block;
             width: 300px;
             margin-bottom: .5rem;
-            padding: .5em 1em;
+            padding: .75em 1em;
             background-color: $brand-white;
-            border-radius: 1em;
+            border-radius: 1.25em;
             border: none;
+            font-size: 1.25em;
           }
 
           &:hover{
@@ -162,6 +163,14 @@ $wrap:      1200px;
     font-size: .75rem;
   }
 
+  p, h6,
+  .subheading{
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.00625em;
+    line-height: 1.5em;
+  }
+
   header{
     .navbar{
       .navbar-nav{
@@ -181,6 +190,14 @@ $wrap:      1200px;
       }
     }
 
+    &.project{
+      padding-top: 0px;
+    }
+
+    &.post{
+      padding-top: 2rem;
+    }
+
     &.contact{
       h3{
         font-size: 1.5rem;
@@ -196,7 +213,27 @@ $wrap:      1200px;
     }
   }
 
+  footer{
+    .icon-stack{
+      margin-top: 1rem;
+
+      li{
+        a{
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
   img.cover{
     height: auto !important;
+  }
+
+  .breadcrumb{
+    display: inherit;
+
+    .breadcrumb-item{
+      display: inline;
+    }
   }
 }
