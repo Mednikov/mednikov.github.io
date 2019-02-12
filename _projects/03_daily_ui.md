@@ -272,3 +272,15 @@ _12.07.2018 UPD// Они его, наконец, сами поменяли_
 Немножко ностальгии по Стамбулу.
 
 ![#040 — Recipe / Рецепт]({{site.baseurl}}/img/project_img/{{page.folder}}/040-recipe.png)
+
+
+##### #041 — Workout Tracker / Отслеживание тренировок
+Убрал всё лишнее, чтобы не отвлекать пользователя во время упражнений.
+
+![#041 — Workout Tracker / Отслеживание тренировок]({{site.baseurl}}/img/project_img/{{page.folder}}/041-workout-tracker.png)
+
+
+##### #042 — ToDo list / Список дел
+Убрал всё лишнее, чтобы не отвлекать пользователя от выполнения задач :wink:
+
+![#042 — ToDo list / Список дел]({{site.baseurl}}/img/project_img/{{page.folder}}/042-todo-list.png)
