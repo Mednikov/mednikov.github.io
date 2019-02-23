@@ -6,6 +6,9 @@ permalink: rooms_kitchen
 title: Rooms & Kitchen
 meta: Интернет-магазин элитной дизайнерской мебели «Rooms & Kitchen
 
+style: true
+featured_image: roomskitchen_featured.png
+
 cover: roomskitchen_cover.png
 customer: Rooms & Kitchen
 agency: Медиа Цель

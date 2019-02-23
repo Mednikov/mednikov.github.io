@@ -1,0 +1,25 @@
+header,
+section.hero.hero-index{
+	background-color: #1864FF;
+	color: #fff;
+}
+section.hero.hero-index{
+	padding-bottom: 0;
+}
+.proj-title,
+header .navbar .navbar-nav .nav-item .nav-link{
+	color: #fff;
+	border-bottom-color: rgba(255,255,255, .5);
+}
+header .navbar .navbar-nav .nav-item:hover .nav-link{
+	color: #fff;
+	border-bottom-color: rgba(255,255,255, 1);
+}
+header .navbar #logo polygon{
+	fill: #fff;
+}
+
+.featured-image img{
+	margin-top: 40px;
+	display: inline-block;
+}

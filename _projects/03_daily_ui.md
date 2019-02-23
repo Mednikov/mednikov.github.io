@@ -6,6 +6,9 @@ permalink: daily_ui
 title: Daily UI
 meta: Ежедневный челлендж на 100 дней, где на почту приходит задание – создать тот или иной элемент интерфейса.
 
+style: true
+featured_image: daily-ui-featured.png
+
 cover: dailyui_cover.png
 <!-- customer: Медиа Цель -->
 <!-- src: https://mediami.ru -->

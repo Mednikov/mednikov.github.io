@@ -1,0 +1,22 @@
+header,
+section.hero.hero-index{
+	background-color: #43249B;
+	background-image: url(/img/project_img/media_mission/mediamission_hero_bg.png);
+	color: #fff;
+}
+.proj-title,
+header .navbar .navbar-nav .nav-item .nav-link{
+	color: #fff;
+	border-bottom-color: rgba(255,255,255, .5);
+}
+header .navbar .navbar-nav .nav-item:hover .nav-link{
+	color: #fff;
+	border-bottom-color: rgba(255,255,255, 1);
+}
+header .navbar #logo polygon{
+	fill: #fff;
+}
+
+.featured-image img{
+	display: inline-block;
+}
