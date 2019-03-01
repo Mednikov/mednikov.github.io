@@ -1,4 +1,6 @@
 ---
+hidden: true
+
 layout: project
 folder: talko
 permalink: talko
