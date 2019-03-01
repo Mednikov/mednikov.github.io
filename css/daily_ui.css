@@ -23,3 +23,13 @@ header .navbar #logo polygon{
 	margin-top: 40px;
 	display: inline-block;
 }
+
+@media (max-width: 575px) {
+	header .navbar .navbar-nav .nav-item .nav-link,
+	header .navbar .navbar-nav .nav-item:hover .nav-link{
+		color: #11163C;
+	}
+	section.project {
+		padding-top: 40px;
+	}
+}

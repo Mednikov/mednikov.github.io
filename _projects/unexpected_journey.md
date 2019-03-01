@@ -1,4 +1,6 @@
 ---
+hidden: true
+
 layout: project
 folder: unexpected_journey
 permalink: unexpected_journey
