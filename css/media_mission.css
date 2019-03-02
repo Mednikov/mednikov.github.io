@@ -17,8 +17,45 @@ header .navbar #logo polygon{
 	fill: #fff;
 }
 
+section.project-full{
+	padding: 0;
+}
+section.project-grey{
+	background-color: #F8F8FF;
+}
+section.project-brand{
+	background-color: #43249B;
+	color: white;
+}
+section.project-brand-design{
+	background-image: url(/img/project_img/media_mission/mediamission_hero_bg.png);
+}
+
+section.project-brand-design img{
+	box-shadow: 0 5px 18px #2e196b;
+}
+section.project-bd{
+	border-bottom: 4px solid #fff;
+}
+section.project-brand h1,
+section.project-brand h2,
+section.project-brand h3,
+section.project-brand h4,
+section.project-brand h5,
+section.project-brand h6{
+	color: white;
+}
+
 .featured-image img{
 	display: inline-block;
+}
+
+.chat{
+	display: block;
+	padding: 20px 32px;
+	background-color: white;
+	border-radius: 0 20px 20px;
+	box-shadow: 5px 5px 18px rgba(67,36,155, 0.15);
 }
 
 @media (max-width: 575px) {
