@@ -52,10 +52,26 @@ section.project-brand h6{
 
 .chat{
 	display: block;
+	position: relative;
+	margin-left: 100px;
 	padding: 20px 32px;
 	background-color: white;
 	border-radius: 0 20px 20px;
 	box-shadow: 5px 5px 18px rgba(67,36,155, 0.15);
+}
+.chat::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100px;
+	width: 80px;
+	height: 80px;
+	background-image: url(/img/project_img/media_mission/mediamission_ava.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
 }
 
 @media (max-width: 575px) {
