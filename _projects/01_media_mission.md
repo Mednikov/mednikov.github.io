@@ -65,8 +65,12 @@ description: Посадочная страница для веб-студии «
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
       <div class="col-md-12 text-center">
-      	<img class="d-inline-block" src="{{site.baseurl}}/img/project_img/{{page.folder}}/mediamission-isometric-wireframe.png" alt="Медиа цель - wireframe">
+        <img class="d-inline-block" src="{{site.baseurl}}/img/project_img/{{page.folder}}/mediamission-isometric-wireframe.png" alt="Медиа цель - wireframe">
       </div>
     </div>
   </div>
@@ -122,12 +126,16 @@ description: Посадочная страница для веб-студии «
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
       <div class="col-md-6 text-center">
-      	<img class="d-inline-block" src="{{site.baseurl}}/img/project_img/{{page.folder}}/mediamission-index.png" alt="Медиа цель - главная страница">
+        <img class="d-inline-block" src="{{site.baseurl}}/img/project_img/{{page.folder}}/mediamission-index.png" alt="Медиа цель - главная страница">
       </div>
       <div class="col-md-6 text-center">
-      	<img class="d-inline-block mb-5" src="{{site.baseurl}}/img/project_img/{{page.folder}}/mediamission-modal.png" alt="Медиа цель - модальное окно">
-      	<img class="d-inline-block" src="{{site.baseurl}}/img/project_img/{{page.folder}}/mediamission-loader.png" alt="Медиа цель - прелоадер">
+        <img class="d-inline-block mb-5" src="{{site.baseurl}}/img/project_img/{{page.folder}}/mediamission-modal.png" alt="Медиа цель - модальное окно">
+        <img class="d-inline-block" src="{{site.baseurl}}/img/project_img/{{page.folder}}/mediamission-loader.png" alt="Медиа цель - прелоадер">
       </div>
     </div>
   </div>
@@ -149,44 +157,4 @@ description: Посадочная страница для веб-студии «
   </div>
 </section>
 
-
-
-
-
-
-
-<!-- ##### Задание (дословно)
-> Сделать минимальнодизайный, некреативный, выпадающий из представления о красивых лендосах лендос. Ориентир - дос либо 8битка первая, где красные буквы на сером фоне были. никакой вымеренности, никакой красоты. Это должно выглядеть как день открытых дверей в психушке.  Если дизайнер застесняется, что мы потом расскажем, что "отрисовал это ужас", - мы не расскажем. Хочется немного топорности, за которой будет угадываться интеллект и радость, глубина технической мысли и небрежность. И чтобы звездочки. Никаких людей, цветов, щенков, стилей, плавных переходов. В логотип хочу котика. Еще на сайте нужны сердечки. Сердечки - это мило.
-
-
-![Медиа цель - скриншот 1]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh.png)
-
-
-##### Мудборда
-Несмотря на пожелания заказчика по поводу вымеренности и красоты, решил, что все-таки необходимо придерживаться определенного уровня качества. Нужно было совместить креативный подход студии, и не отпугнуть от них потенциальных клиентов.
-
-Чтобы облегчить решение этой задачи был составлен мудборд. Для эмоциональной вовлеченности клиентов решил истпользовать стиль старых восьмибитных игр. Текстовую информацию передал в виде DOS-систем или в виде консоли. 
-
-![Медиа цель - скриншот 2]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_2.png)
-
-##### Брендинг
-Заказчик хотел котика в логотип — он его получил :joy:
-
-![Медиа цель - скриншот 3]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_3.png)
-
-##### Цвета
-![Медиа цель - скриншот 4]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_4.png)
-
-##### Вайфрейм
-Далее был разработан вайфрейм со структурой, отвечающей всем требованиям лендинга.
-
-![Медиа цель - скриншот 5]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_5.png)
-
-##### Результат
-![Медиа цель - скриншот 6]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_6.png)
-![Медиа цель - скриншот 7]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_7.png)
-![Медиа цель - скриншот 8]({{site.baseurl}}/img/project_img/{{page.folder}}/mediamission_bh_8.png)
-
-##### Отзыв клиента
-> Павел, большое спасибо, всё классно, это даже лучше, чем мы хотели. Спасибо! -->
 

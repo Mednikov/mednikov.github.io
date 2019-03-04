@@ -19,6 +19,77 @@ header .navbar #logo polygon{
 	fill: #fff;
 }
 
+
+section.project-full{
+	padding: 0;
+}
+section.project-grey{
+	background-color: #F8F8FF;
+}
+section.project-brand{
+	background-color: #641826;
+	color: white;
+}
+section.project-brand h1,
+section.project-brand h2,
+section.project-brand h3,
+section.project-brand h4,
+section.project-brand h5,
+section.project-brand h6{
+	color: white;
+}
+section.project-bd{
+	border-bottom: 4px solid #fff;
+}
+
+.mockup{
+	position: relative;
+}
+.mockup-design{
+	display: block;
+	position: absolute;
+	width: 76%;
+	top: 5%;
+	left: 12%;
+}
+
+.chat{
+	/*display: block;*/
+	position: relative;
+	margin-left: 100px!important;
+	padding: 0;
+	list-style-type: none!important;
+}
+.chat::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100px;
+	width: 80px;
+	height: 80px;
+	background-image: url(/img/project_img/media_mission/mediamission_ava.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+.chat li p{
+	display: inline-block;
+	margin-bottom: 4px;
+	padding: 20px 32px;
+	background-color: white;
+	border-radius: 0 20px 20px 0;
+	box-shadow: 5px 5px 18px rgba(67,36,155, 0.15);
+}
+.chat li:first-child p{
+	border-radius: 20px 20px 20px 0;
+}
+.chat li:last-child p{
+	border-radius: 0 20px 20px;
+}
+
+
 .featured-image img{
 	margin-top: 40px;
 	display: inline-block;
