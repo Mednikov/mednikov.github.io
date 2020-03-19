@@ -28,6 +28,11 @@ permalink: /about/
 					Опыт работы
 				</p>
 				<div class="cv-block mb-4">
+					<h6><a href="http://fcisp.ru">ФКУ&nbsp;«ЦЭАИТ&nbsp;СП»</a></h6>
+					<p class="mb-2">2019 — по&nbsp;настоящее время</p>
+					<p><i>Эксперт</i></p>
+				</div>
+				<div class="cv-block mb-4">
 					<h6><a href="https://infoculture.ru">АНО&nbsp;«Инфокультура»</a></h6>
 					<p class="mb-2">2014 — по&nbsp;настоящее время</p>
 					<p><i>Веб-дизайнер, front-end  разработчик</i></p>
