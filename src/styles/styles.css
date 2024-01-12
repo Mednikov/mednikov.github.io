@@ -12844,5 +12844,21 @@ a.navbar-brand.active {
 .project img {
   max-width: 100%;
 }
+@media (max-width: 767.98px) {
+  h1, .h1, .fs-1 {
+    font-size: 2rem !important;
+  }
+  h2, .h2, .fs-2 {
+    font-size: 1.5rem !important;
+  }
+  h3, .h3, .fs-3 {
+    font-size: 1.25rem !important;
+  }
+  h4, .h4, .fs-4,
+  h5, .h5, .fs-5,
+  h6, .h6, .fs-6 {
+    font-size: 1rem !important;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
