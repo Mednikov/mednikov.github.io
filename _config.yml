@@ -21,8 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://pavelmednikov.com # the base hostname & protocol for your site, e.g. http://example.com
 enforce_ssl: pavelmednikov.com
 
-author: Павел&nbsp;Медников
-subtitle: Веб-дизайнер и front-end разработчик
+author: Паша Медников
+subtitle: Веб-дизайнер и front-end разработчик
 
 fb_app_id: 222928808209319
 

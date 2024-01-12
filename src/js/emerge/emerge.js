@@ -193,7 +193,7 @@
             );
         }
 
-        console.log("  FIRED!", element.id); //:dev
+        // console.log("  FIRED!", element.id); //:dev
     }
 
     const viewWatcher = new IntersectionObserver(function (entries, watcher) {
@@ -491,7 +491,7 @@
     function repeat(event) {
         event.preventDefault();
 
-        console.log("REPLAY"); //:dev
+        // console.log("REPLAY"); //:dev
 
         getEmergeElements().forEach(function (element) {
             element.style.transition = null;

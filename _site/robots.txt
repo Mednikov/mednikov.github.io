@@ -1,9 +1,0 @@
-Sitemap: https://pavelmednikov.com/sitemap.xml
-
-User-Agent: *
-Disallow: /google7d24995e3e09b4db.html
-Disallow: /thanks
-Disallow: /404
-Disallow: /agreement
-Disallow: /policy/
-Host: https://pavelmednikov.com

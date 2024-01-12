@@ -1,2 +1,0 @@
-# Pavel Mednikov
-Personal portfolio  

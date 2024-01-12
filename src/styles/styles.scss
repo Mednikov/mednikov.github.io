@@ -350,9 +350,27 @@ a.navbar-brand{
   }
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+.navbar-nav .nav-item{
+  .nav-link{
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  &:last-child{
+    .nav-link{
+      margin-right: 0;
+    }
+  }
+} 
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show{
   color: rgba($link-hover-color, .8);
 }
+
+.navbar-toggler-icon{
+  width: 1em;
+  height: 1em;
+}
+
 
 
 .case{
@@ -617,19 +635,26 @@ a.navbar-brand{
 // $h3-font-size:                $font-size-base * 1.875 !default;
 // $h4-font-size:                $font-size-base * 1.25 !default;
 @include media-breakpoint-down(md) {
+
   h1, .h1, .fs-1{
-    font-size: $font-size-base * 2 !important;
-  }
-  h2, .h2, .fs-2{
     font-size: $font-size-base * 1.5 !important;
   }
-  h3, .h3, .fs-3{
+  h2, .h2, .fs-2{
     font-size: $font-size-base * 1.25 !important;
+  }
+  h3, .h3, .fs-3{
+    font-size: $font-size-base * 1.125 !important;
   }
   h4, .h4, .fs-4,
   h5, .h5, .fs-5,
   h6, .h6, .fs-6{
     font-size: $font-size-base !important;
+  }
+
+  .project{
+    p{
+      font-size: 1rem;
+    }
   }
 }
 
