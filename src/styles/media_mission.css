@@ -1,0 +1,102 @@
+body{
+/*	background: #F7F4FF;*/
+	background: #2C107A;
+	color: white;
+}
+
+a{
+	color: white !important;
+	border-bottom-color: rgba(225,225,225, .4) !important;
+}
+a:hover{
+	border-bottom-color: rgba(225,225,225, 1) !important;
+}
+
+
+
+
+/*header,
+section.hero.hero-index{
+	background-color: #43249B;
+	background-image: url(/img/project_img/media_mission/mediamission_hero_bg.png);
+	color: #fff;
+}
+.proj-title,
+header .navbar .navbar-nav .nav-item .nav-link{
+	color: #fff;
+	border-bottom-color: rgba(255,255,255, .5);
+}
+header .navbar .navbar-nav .nav-item:hover .nav-link{
+	color: #fff;
+	border-bottom-color: rgba(255,255,255, 1);
+}
+header .navbar #logo polygon{
+	fill: #fff;
+}
+
+section.project-full{
+	padding: 0;
+}
+section.project-grey{
+	background-color: #F8F8FF;
+}
+section.project-brand{
+	background-color: #43249B;
+	color: white;
+}
+section.project-brand-design{
+	background-image: url(/img/project_img/media_mission/mediamission_hero_bg.png);
+}
+
+section.project-brand-design img{
+	box-shadow: 0 5px 18px #2e196b;
+}
+section.project-bd{
+	border-bottom: 4px solid #fff;
+}
+section.project-brand h1,
+section.project-brand h2,
+section.project-brand h3,
+section.project-brand h4,
+section.project-brand h5,
+section.project-brand h6{
+	color: white;
+}
+
+.featured-image img{
+	display: inline-block;
+}
+
+.chat{
+	display: block;
+	position: relative;
+	margin-left: 100px;
+	padding: 20px 32px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 5px 5px 18px rgba(67,36,155, 0.15);
+}
+.chat::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100px;
+	width: 80px;
+	height: 80px;
+	background-image: url(/img/project_img/media_mission/mediamission_ava.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+
+@media (max-width: 575px) {
+	header .navbar .navbar-nav .nav-item .nav-link,
+	header .navbar .navbar-nav .nav-item:hover .nav-link{
+		color: #11163C;
+	}
+	section.project {
+		padding-top: 40px;
+	}
+}*/

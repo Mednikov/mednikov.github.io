@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d6d6ea;
+      }
+
+      .cls-2 {
+        fill: #adadd6;
+      }
+    </style>
+  </defs>
+  <g id="Group_8" data-name="Group 8" transform="translate(-433 -2392)">
+    <rect id="Rectangle_33" data-name="Rectangle 33" class="cls-1" width="80" height="80" rx="3" transform="translate(433 2392)"/>
+    <path id="Rectangle_34" data-name="Rectangle 34" class="cls-2" d="M3,0H76.612a3,3,0,0,1,3,3V15.121a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(433 2392)"/>
+    <circle id="Ellipse_16" data-name="Ellipse 16" class="cls-1" cx="2.908" cy="2.908" r="2.908" transform="translate(437.653 2396.653)"/>
+    <circle id="Ellipse_17" data-name="Ellipse 17" class="cls-1" cx="2.908" cy="2.908" r="2.908" transform="translate(445.795 2396.653)"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" class="cls-1" cx="2.908" cy="2.908" r="2.908" transform="translate(453.937 2396.653)"/>
+    <path id="Path_49" data-name="Path 49" class="cls-2" d="M19.368-16.992,7.38-12.6,19.368-8.244v4.5L2.232-10.26v-4.68l17.136-6.516Zm12.888-13.32h5L25.38,3.6h-5ZM55.044-14.94v4.68L37.908-3.744v-4.5L49.9-12.6,37.908-16.992v-4.464Z" transform="translate(444 2451)"/>
+  </g>
+</svg>
