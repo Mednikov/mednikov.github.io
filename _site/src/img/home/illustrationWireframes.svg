@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 500">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-illustrationWireframes);
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #d6d6ea;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-illustrationWireframes">
+      <rect width="1200" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="illustrationWireframes" class="cls-1">
+    <g id="Group_23" data-name="Group 23">
+      <g id="Rectangle_11" data-name="Rectangle 11" class="cls-2" transform="translate(142 214)">
+        <rect class="cls-3" width="203.929" height="122.655" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="202.929" height="121.655" rx="2.5"/>
+      </g>
+      <g id="Rectangle_12" data-name="Rectangle 12" class="cls-2" transform="translate(152.221 265.106)">
+        <rect class="cls-3" width="122.159" height="61.328" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="121.159" height="60.328" rx="2.5"/>
+      </g>
+      <g id="Rectangle_17" data-name="Rectangle 17" class="cls-2" transform="translate(855.221 97.106)">
+        <rect class="cls-3" width="122.159" height="61.328" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="121.159" height="60.328" rx="2.5"/>
+      </g>
+      <g id="Rectangle_14" data-name="Rectangle 14" class="cls-2" transform="translate(152.221 224.221)">
+        <rect class="cls-3" width="183.486" height="30.664" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="182.486" height="29.664" rx="2.5"/>
+      </g>
+      <g id="Rectangle_16" data-name="Rectangle 16" class="cls-2" transform="translate(855.221 56.221)">
+        <rect class="cls-3" width="183.486" height="30.664" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="182.486" height="29.664" rx="2.5"/>
+      </g>
+      <g id="Rectangle_13" data-name="Rectangle 13" class="cls-2" transform="translate(285.098 265.106)">
+        <rect class="cls-3" width="50.61" height="61.328" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="49.61" height="60.328" rx="2.5"/>
+      </g>
+      <g id="Rectangle_18" data-name="Rectangle 18" class="cls-2" transform="translate(988.098 97.106)">
+        <rect class="cls-3" width="50.61" height="61.328" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="49.61" height="60.328" rx="2.5"/>
+      </g>
+      <g id="Rectangle_19" data-name="Rectangle 19" class="cls-2" transform="translate(43.495 346.69)">
+        <rect class="cls-3" width="47.505" height="88.31" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="46.505" height="87.31" rx="2.5"/>
+      </g>
+      <g id="Rectangle_24" data-name="Rectangle 24" class="cls-2" transform="translate(913 297)">
+        <rect class="cls-3" width="47.505" height="88.31" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="46.505" height="87.31" rx="2.5"/>
+      </g>
+      <g id="Rectangle_20" data-name="Rectangle 20" class="cls-2" transform="translate(51.99 354.69)">
+        <rect class="cls-3" width="31.505" height="24.31" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="30.505" height="23.31" rx="2.5"/>
+      </g>
+      <g id="Rectangle_25" data-name="Rectangle 25" class="cls-2" transform="translate(921.495 305)">
+        <rect class="cls-3" width="31.505" height="24.31" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="30.505" height="23.31" rx="2.5"/>
+      </g>
+      <g id="Rectangle_22" data-name="Rectangle 22" class="cls-2" transform="translate(51.99 386.69)">
+        <rect class="cls-3" width="31.505" height="16.31" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="30.505" height="15.31" rx="2.5"/>
+      </g>
+      <g id="Rectangle_26" data-name="Rectangle 26" class="cls-2" transform="translate(921.495 337)">
+        <rect class="cls-3" width="31.505" height="16.31" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="30.505" height="15.31" rx="2.5"/>
+      </g>
+      <g id="Rectangle_23" data-name="Rectangle 23" class="cls-2" transform="matrix(1, -0.017, 0.017, 1, 51.85, 411.55)">
+        <rect class="cls-3" width="31.505" height="16.31" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="30.505" height="15.31" rx="2.5"/>
+      </g>
+      <g id="Rectangle_27" data-name="Rectangle 27" class="cls-2" transform="matrix(1, -0.017, 0.017, 1, 921.355, 361.86)">
+        <rect class="cls-3" width="31.505" height="16.31" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="30.505" height="15.31" rx="2.5"/>
+      </g>
+      <g id="Rectangle_15" data-name="Rectangle 15" class="cls-2" transform="translate(845 46)">
+        <rect class="cls-3" width="203.929" height="122.655" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="202.929" height="121.655" rx="2.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

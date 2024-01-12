@@ -2,169 +2,189 @@
 layout: default
 ---
 
-<section class="hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="slogan">{{page.slogan}}</h1>
-        <h5 class="subheading">{{page.subheading}}</h5>
-        <a href="{{site.baseurl}}/contact/" class="btn" onclick="yaCounter44663041.reachGoal('order_header'); return true;">Заказать сайт</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="illustration d-none d-sm-block" data-tilt data-tilt-axis="x" data-tilt-perspective="1500">
-        <img class="card-img-1" src="{{site.baseurl}}/img/home/illustrationBG.svg" alt="illustrationBG.svg">
-        <img class="card-img-2" src="{{site.baseurl}}/img/home/illustrationWireframes.svg" alt="illustrationBG.svg">
-        <img class="card-img-3" src="{{site.baseurl}}/img/home/illustrationScreens.svg" alt="illustrationBG.svg">
-        <img class="card-img-4" src="{{site.baseurl}}/img/home/illustrationPashu.svg" alt="illustrationBG.svg">
-      </div>
-      <div class="col mt-5 d-block d-sm-none text-center">
-        <img src="{{site.baseurl}}/img/home/illustration-mobile.svg" alt="illustration-mobile.svg" class="d-ib">
-      </div>
+
+
+<!-- HERO -->
+<div class="container-fluid pt-5 pb-3">
+  <div class="row pb-4">
+    <!-- <div class="col-10 col-lg-6 offset-lg-2"> -->
+    <div class="col-10 col-lg-6">
+      <h3 class="fw-normal">Проектирую цифровые сервисы на открытых данных, сайты и инфографику. Сейчас работаю дизайнером в <a href="https://infoculture.ru" target="_blank">Инфокультуре</a> и над собственными проектами. </h3>
     </div>
   </div>
-</section>
+</div>
+<!-- END HERO -->
 
 
 
+<!-- WORKS -->
+<div id="works" class="container-fluid pt-5 mb-5">
+  <div class="row gy-5 d-flex align-items-start">
 
-
-<section class="works" id="works">
-
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-7 section-heading">
-        <h2 class="slogan">{{page.works_heading}}</h2>
-        <h6 class="subheading">{{page.works_subheading}}</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      {% for project in site.projects %}
-      {% if project.hidden != true %}
-      <div class="col-md-6">
-        <a href="{{site.baseurl}}{{project.url}}" class="work" data-tilt data-tilt-axis="x" data-tilt-perspective="1500">
-          <div class="work-img">
-            <img src="{{site.baseurl}}/img/project_img/{{project.folder}}/{{project.cover}}" alt="Проект — {{project.title}}">
-            <div class="work-img-overlay"></div>
-            <div class="work-img-inner">
-              <div class="work-img-text">
-                <p>{{project.role}}</p>
-                <h4>{{project.title}}</h4>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      {% endif %} 
-      {% endfor %}
-    </div>
-  </div>
-
-</section>
-
-
-
-
-<section class="services">
-
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-7 section-heading">
-        <h2 class="slogan">{{page.services_heading}}</h2>
-        <h6 class="subheading">{{page.services_subheading}}</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row justify-content-around">
-      {% for service in page.services %}
-      <div class="col col-sm-4 col-md-2 service">
-        {% for entry in service.icon %}
-        <img src="{{site.baseurl}}/img/home/{{entry.img}}" alt="{{service.name}}">
-        {% endfor %}
-        <p><strong>{{service.name}}</strong></p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-</section>
-
-
-<section class="clients">
-  <div class="container">
-
-    <div class="row justify-content-md-center">
-      <div class="col-md-7 section-heading">
-        <h2 class="slogan">{{page.clients_heading}}</h2>
-        <h6 class="subheading">{{page.clients_subheading}}</h6>
+    
+    <!-- Full -->
+    {% assign chatterbox = site.projects | where:"folder", "chatterbox"  | first %}
+    <div class="col-10 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img-lg mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{chatterbox.folder}}/{{chatterbox.cover}}" class="w-100" alt="Проект — {{chatterbox.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{chatterbox.url}}" class="stretched-link fs-4 fw-normal">{{chatterbox.title}}</a>
       </div>
     </div>
 
-    <div class="row justify-content-around d-flex align-items-center">
-      <div class="col-4 col-md-2 client">
-        <img src="{{site.baseurl}}/img/home/mf@2x.png" alt="Минфин России">
+    <!-- 2 left -->
+    {% assign my_game = site.projects | where:"folder", "my_game"  | first %}
+    <div class="col-5 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{my_game.folder}}/{{my_game.cover}}" class="w-100" alt="Проект — {{my_game.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{my_game.url}}" class="stretched-link fs-4 fw-normal">{{my_game.title}}</a>
       </div>
-      <div class="col-4 col-md-3 client">
-        <img src="{{site.baseurl}}/img/home/aiesec@2x.png" alt="AIESEC">
+    </div>
+    {% assign combat_unit = site.projects | where:"folder", "combat_unit"  | first %}
+    <div class="col-5 col-md-3 offset-md-2 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+         <img src="{{site.baseurl}}/src/img/project_img/{{combat_unit.folder}}/{{combat_unit.cover}}" class="w-100" alt="Проект — {{combat_unit.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{combat_unit.url}}" class="stretched-link fs-4 fw-normal">{{combat_unit.title}}</a>
       </div>
-      <div class="col-4 col-md-2 client">
-        <img src="{{site.baseurl}}/img/home/rosatom@2x.png" alt="Росатом">
+    </div>
+
+
+    <!-- 2 right -->
+    {% assign datango = site.projects | where:"folder", "datango"  | first %}
+    <div class="col-5 col-md-3 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+         <img src="{{site.baseurl}}/src/img/project_img/{{datango.folder}}/{{datango.cover}}" class="w-100" alt="Проект — {{datango.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{datango.url}}" class="stretched-link fs-4 fw-normal">{{datango.title}}</a>
       </div>
-      <div class="col-4 col-md-3 client">
-        <img src="{{site.baseurl}}/img/home/karo@2x.png" alt="Каро Фильм">
+    </div>
+    {% assign plainrussian = site.projects | where:"folder", "plainrussian"  | first %}
+    <div class="col-5 offset-md-2 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{plainrussian.folder}}/{{plainrussian.cover}}" class="w-100" alt="Проект — {{plainrussian.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{plainrussian.url}}" class="stretched-link fs-4 fw-normal">{{plainrussian.title}}</a>
       </div>
-      <div class="col-4 col-md-2 client">
-        <img src="{{site.baseurl}}/img/home/loko@2x.png" alt="ФК Локомотив">
+    </div>
+
+    <!-- 3 center -->
+    {% assign media_mission = site.projects | where:"folder", "media_mission"  | first %}
+    <div class="col-10 col-md-2 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img-sm mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{media_mission.folder}}/{{media_mission.cover}}" class="w-100" alt="Проект — {{media_mission.title}}">
+        </div>  
+        <a href="{{site.baseurl}}{{media_mission.url}}" class="stretched-link fs-4 fw-normal">{{media_mission.title}}</a>
+      </div>
+    </div>
+    {% assign rooms_kitchen = site.projects | where:"folder", "rooms_kitchen"  | first %}
+    <div class="col-5 col-md-4 offset-md-1 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img-sm mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{rooms_kitchen.folder}}/{{rooms_kitchen.cover}}" class="w-100" alt="Проект — {{rooms_kitchen.title}}">
+        </div>  
+        <a href="{{site.baseurl}}{{rooms_kitchen.url}}" class="stretched-link fs-4 fw-normal">{{rooms_kitchen.title}}</a>
+      </div>
+    </div>
+    {% assign cinemapark = site.projects | where:"folder", "cinemapark"  | first %}
+    <div class="col-5 col-md-2 offset-md-1 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img-sm mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{cinemapark.folder}}/{{cinemapark.cover}}" class="w-100" alt="Проект — {{cinemapark.title}}">
+        </div>  
+        <a href="{{site.baseurl}}{{cinemapark.url}}" class="stretched-link fs-4 fw-normal">{{cinemapark.title}}</a>
+      </div>
+    </div>
+
+    <!-- Full -->
+    {% assign daily_ui = site.projects | where:"folder", "daily_ui"  | first %}
+    <div class="col-10 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img-lg mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{daily_ui.folder}}/{{daily_ui.cover}}" class="w-100" alt="Проект — {{daily_ui.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{daily_ui.url}}" class="stretched-link fs-4 fw-normal">{{daily_ui.title}}</a>
       </div>
     </div>
 
   </div>
-</section>
+</div>
+<!-- END WORKS -->
 
 
 
-
-
-
-{% if site.posts.size > 0 %}
-<section class="post-list post-list-home">
-
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-7 section-heading">
-        <h2 class="slogan"><a href="{{site.baseurl}}blog/">{{page.blog_heading}}</a></h2>
-        <h6 class="subheading">{{page.blog_subheading}}</h6>
+<!-- ABOUT -->
+<div class="container-fluid overflow-x-hidden">
+  <div class="row">
+    <div class="col-10 py-5">
+      <h2 class="fw-normal lh-sm">Помогаю наладить коммуникацию между потребителем и брендом. </h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10 col-lg-4">
+      <p class="fs-3">
+        Верю, что не бывает скучных задач.
+      </p>
+      <p class="fs-3">
+        Проектирую как с нуля, так и подстраиваясь под необходимые рамки.
+      </p>
+      <!-- <p class="fs-5 d-inline-block position-relative mb-0">
+        <a href="#" class="stretched-link border-0"><span class="link">Смотреть резюме</span> →</a>
+      </p> -->
+    </div>
+    <div class="col-10 col-lg-4 offset-lg-2 fs-4">
+      <div class="row">
+        <div class="col-5">
+          <p class="text-muted">Цифровые продукты</p>
+        </div>
+        <div class="col-5">
+          <ul class="list-unstyled">
+            <li>Веб-приложения</li>
+            <li>Корпоративные сайты</li>
+            <li>Лендинги</li>
+            <li>Мобильные приложения</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <p class="text-muted">Дизайн</p>
+        </div>
+        <div class="col-5">
+          <ul class="list-unstyled">
+            <li>Айдентика</li>
+            <li>Инфографика</li>
+            <li>Печатная продукция</li>
+            <li>Моушен</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <p class="text-muted">Разработка</p>
+        </div>
+        <div class="col-5">
+          <ul class="list-unstyled">
+            <li>Tilda</li>
+            <li>Readymag</li>
+            <li>WordPress</li>
+            <li>Jekyll</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+</div>
+<!-- END ABOUT -->
 
-  <div class="container-fluid">
-    <div class="row">
-      {% for post in site.posts limit:3 %}
-      <div class="post-item col-12 
-      {% if forloop.index == 1 %}
-      col-sm-12 col-lg-6 post-item-big
-      {% else %}
-      col-sm-6 col-lg-3
-      {% endif %}
-      ">
-        <a href="{{site.baseurl}}{{post.url}}" class="post-item-card">
-          <p class="date">{% include date.html %}</p>
-          <p class="title"><strong>{{post.title}}</strong></p>
-          <!-- <p class="meta">{{post.meta}}</p> -->
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
 
-</section>
-{% endif %} 
 
 
 

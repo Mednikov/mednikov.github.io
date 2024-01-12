@@ -1,0 +1,13 @@
+body{
+	background: #222438;
+	color: white;
+}
+
+a{
+	color: white !important;
+	border-bottom-color: rgba(225,225,225, .4) !important;
+}
+a:hover{
+	border-bottom-color: rgba(225,225,225, 1) !important;
+}
+
