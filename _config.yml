@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Павел Медников — веб-дизайнер и front-end разработчик
+title: Паша Медников — веб-дизайнер и front-end разработчик
 email: hello@pavelmednikov.com
 description: > # this means to ignore newlines until "baseurl:"
-  Более 7 лет опыта в проектировании, дизайне, разработке веб-сайтов, мобильных приложений и много другого.
+  Проектирую цифровые сервисы на открытых данных, сайты и инфографику. Дизайнер в Инфокультуре.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://pavelmednikov.com # the base hostname & protocol for your site, e.g. http://example.com
 enforce_ssl: pavelmednikov.com
@@ -34,7 +34,7 @@ dribbble_username: mednikov
 linkedin_username: mednikov
 
 timezone: Europe/Moscow
-paginate: 7
+paginate: 50
 paginate_path: "/blog/page:num/"
 
 # Collections settings

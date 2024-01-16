@@ -12848,14 +12848,29 @@ a.navbar-brand.active {
 
 .project h2, .project h3, .project h4, .project h5, .project h6,
 .project .h2, .project .h3, .project .h4, .project .h5, .project .h6,
-.project p {
+.project p,
+.project hr,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6,
+.post .h2,
+.post .h3,
+.post .h4,
+.post .h5,
+.post .h6,
+.post p,
+.post hr {
   max-width: 768px;
   margin-bottom: 1rem;
 }
-.project p {
+.project p,
+.post p {
   font-size: 1.25rem;
 }
-.project img {
+.project img,
+.post img {
   max-width: 100%;
 }
 @media (max-width: 767.98px) {

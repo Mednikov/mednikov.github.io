@@ -1,67 +1,49 @@
 ---
 layout: default
 title: Статьи
-title_tab: Блог Павла Медникова о дизайне
+title_tab: Блог Паши Медникова о дизайне
 ---
 
-<section class="hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center"> 
-        <h1>{{page.title}}</h1>
-      </div>
+<!-- HERO -->
+<div class="container-fluid pt-5 pb-3">
+  <div class="row pb-4">
+    <div class="col-10">
+      <h1 class="lh-1 pb-3">{{page.title}}</h1>
     </div>
   </div>
-</section>
+</div>
+<!-- END HERO -->
 
 
-<section class="post-list post-list-home page">
 
+<!-- BLOG POSTS -->
+<section class="blog-posts">
   <div class="container-fluid">
-    <div class="row">
-    {% if paginator.posts %}
-      {% for post in paginator.posts %}
-      <div class="post-item col-12 
-      {% if forloop.index == 1 %}
-      col-sm-12 col-lg-6 post-item-big
+    <div class="row pb-4">
+      <div class="col-10">
+      {% if paginator.posts %}
+        {% for post in paginator.posts %}
+          <div class="row pb-5">
+            <div class="col-10 col-lg-6 fs-4">
+               <h3 class="mb-3"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+               {% if post.excerpt %}
+               <div>{{ post.excerpt }}</div>
+               {% endif %}
+               <div class="text-muted">{% include date.html %}</div>
+            </div>
+          </div>
+        {% endfor %}
       {% else %}
-      col-sm-6 col-lg-3
+        <p class="fs-2">Статей пока нет</p>
       {% endif %}
-      ">
-        <a href="{{site.baseurl}}{{post.url}}" class="post-item-card">
-          <p class="date">{% include date.html %}</p>
-          <p class="title"><strong>{{post.title}}</strong></p>
-        </a>
       </div>
-      {% endfor %}
-    {% else %}
-      <div class="col text-center">Статей пока нет :disappointed:</div>
-    {% endif %}
     </div>
   </div>
-
+  {% include pagination.html %}
 </section>
 
-<!-- <section class="post-list">
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-10 text">
-        <div class="row">
-        {% if paginator.posts %}
-          {% for post in paginator.posts %}
-          <div class="post-item col-12 col-sm-6 col-md-3">
-            <p class="date">{% include date.html %}</p>
-            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-            <p class="meta">{{post.meta}}</p>
-          </div>
-          {% endfor %}
-        {% else %}
-        <div class="col text-center">Статей пока нет :disappointed:</div>
-        {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+<!-- END BLOG POSTS -->
 
-{% include pagination.html %}
+
+
+
