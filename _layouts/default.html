@@ -22,11 +22,11 @@
     <meta name="google-site-verification" content="om2dVE6xlLIYyUmQU0rt4_OqO2UNvYpBiRheg0-8Njk" />
     
     <!-- favicon -->
-    <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
+    <link rel="shortcut icon" href="{{site.url}}/favicon.ico">
     <link rel="canonical" href=" {{site.url}}{{page.url}}" />
 
     <!-- Open Graph --> 
-    <link rel="image_src" href="{{site.baseurl}}/src/img/og.png">
+    <link rel="image_src" href="{{site.url}}/src/img/og.png">
     {% if site.fb_app_id %}
     <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
     {% endif %}
@@ -35,7 +35,7 @@
     <meta property="og:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}">
     <meta property="og:description" content="{% if page.meta %} {{page.meta}} {% else %} {{site.description}} {% endif %}">
     <meta property="og:locale" content="ru-RU">
-   	<meta property="og:image" content="{% if page.cover %} {{site.baseurl}}/src/img/project_img/{{page.folder}}/{{page.cover}} {% else %} {{site.baseurl}}/src/img/og.png {% endif %}">
+   	<meta property="og:image" content="{% if page.cover %} {{site.url}}/src/img/project_img/{{page.folder}}/{{page.cover}} {% else %} {{site.url}}/src/img/og.png {% endif %}">
     <meta property="og:updated_time" content="{{site.time}}" />
 
     <meta name="twitter:card" content="summary" />
@@ -43,13 +43,13 @@
     <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
     <meta name="twitter:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}" />
     <meta name="twitter:description" content="{% if page.meta %} {{page.meta}} {% else %} {{site.description}} {% endif %}">
-    <meta name="twitter:image" content="{% if page.cover %} {{site.baseurl}}/src/img/project_img/{{page.folder}}/{{page.cover}} {% else %} {{site.baseurl}}/src/img/og.png {% endif %}" />
+    <meta name="twitter:image" content="{% if page.cover %} {{site.url}}/src/img/project_img/{{page.folder}}/{{page.cover}} {% else %} {{site.url}}/src/img/og.png {% endif %}" />
     
     <!-- rss feed -->
     {% feed_meta %}
 
     <!-- Yandex tableau -->
-    <meta name="yandex-tableau-widget" content="logo={{site.baseurl}}/src/img/tableau.png, color=#f5f2f9" />
+    <meta name="yandex-tableau-widget" content="logo={{site.url}}/src/img/tableau.png, color=#f5f2f9" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{site.baseurl}}/src/styles/styles.css">
