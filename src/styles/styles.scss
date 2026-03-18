@@ -238,6 +238,16 @@ $link-hover-color:                        $blue-700 !default;
 // $stretched-link-pseudo-element:           after !default;
 // $stretched-link-z-index:                  1 !default;
 
+// Grid containers
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1520px
+) !default;
+
 // Grid columns
 $grid-columns:                10 !default;
 $grid-gutter-width:           1.5rem !default;
@@ -350,6 +360,10 @@ a.navbar-brand{
   }
 }
 
+ol,ul{
+  padding-left: 1.25rem;
+}
+
 .navbar-nav .nav-item{
   .nav-link{
     display: inline-block;
@@ -411,11 +425,16 @@ a.navbar-brand{
   h2,h3,h4,h5,h6,
   .h2,.h3,.h4,.h5,.h6,
   p,
-  hr{
-    max-width: 768px;
+  hr,
+  ul,
+  ol{
+    // max-width: 768px;
+    max-width: 1024px;
     margin-bottom: 1rem;
   }
-  p{
+  p,
+  ul,
+  ol{
     font-size: 1.25rem;
   }
   img{
@@ -423,6 +442,12 @@ a.navbar-brand{
   }
   p:has(img) {
     // max-width: 100%;
+  }
+  ul{
+    list-style: '— ';
+    li{
+      padding-bottom: .5rem;
+    }
   }
 }
 
@@ -654,7 +679,9 @@ a.navbar-brand{
   }
 
   .project{
-    p{
+    p,
+    ul,
+    ol{
       font-size: 1rem;
     }
   }

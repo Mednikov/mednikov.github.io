@@ -10,6 +10,7 @@ meta: Лендинг турнира «Боевая единица»
 style: true
 featured_image: combat-unit-cover.png
 full: false
+favicon: true
 
 cover: combat-unit-cover.png
 customer: Моя игра

@@ -10,10 +10,11 @@ meta: Интерфейс сервиса «Простым языком»
 style: true
 featured_image: plainrussian-cover.png
 full: false
+favicon: true
 
 cover: plainrussian-cover.png
 customer: Инфокультура
-src: https://plainrussian.ru
+# src: https://plainrussian.ru
 role: Веб-дизайн
 description: Под крылом Инфокультуры сделал дизайн интерфейса оценки понятности текста.
 ---

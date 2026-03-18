@@ -5,11 +5,11 @@ layout: default
 
 
 <!-- HERO -->
-<div class="container-fluid pt-5 pb-3">
+<div class="container-xxl pt-5 pb-3">
   <div class="row pb-4">
     <!-- <div class="col-10 col-lg-6 offset-lg-2"> -->
     <div class="col-10 col-lg-6">
-      <h3 class="fw-normal">Проектирую цифровые сервисы на открытых данных, сайты и инфографику. Сейчас работаю дизайнером в <a href="https://infoculture.ru" target="_blank">Инфокультуре</a> и над собственными проектами. </h3>
+      <h3 class="fw-normal">Проектирую цифровые сервисы на открытых данных, сайты и инфографику. Сейчас работаю дизайнером в Инфокультуре и над собственными проектами. </h3>
     </div>
   </div>
 </div>
@@ -18,9 +18,40 @@ layout: default
 
 
 <!-- WORKS -->
-<div id="works" class="container-fluid pt-5 mb-5">
+<div id="works" class="container-xxl pt-5 mb-5">
   <div class="row gy-5 d-flex align-items-end">
 
+    
+    <!-- Full -->
+    {% assign clearspending = site.projects | where:"folder", "clearspending"  | first %}
+    <div class="col-10 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img-lg mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{clearspending.folder}}/{{clearspending.cover}}" class="w-100" alt="Проект — {{clearspending.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{clearspending.url}}" class="stretched-link fs-4 fw-normal">{{clearspending.title}}</a>
+      </div>
+    </div>
+
+    <!-- 2 left -->
+    {% assign finlibrary = site.projects | where:"folder", "finlibrary"  | first %}
+    <div class="col-10 col-md-5 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{finlibrary.folder}}/{{finlibrary.cover}}" class="w-100" alt="Проект — {{finlibrary.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{finlibrary.url}}" class="stretched-link fs-4 fw-normal">{{finlibrary.title}}</a>
+      </div>
+    </div>
+    {% assign dateno = site.projects | where:"folder", "dateno"  | first %}
+    <div class="col-10 col-md-3 offset-md-2 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+         <img src="{{site.baseurl}}/src/img/project_img/{{dateno.folder}}/{{dateno.cover}}" class="w-100" alt="Проект — {{dateno.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{dateno.url}}" class="stretched-link fs-4 fw-normal">{{dateno.title}}</a>
+      </div>
+    </div>
     
     <!-- Full -->
     {% assign chatterbox = site.projects | where:"folder", "chatterbox"  | first %}
@@ -34,38 +65,8 @@ layout: default
     </div>
 
     <!-- 2 left -->
-    {% assign my_game = site.projects | where:"folder", "my_game"  | first %}
-    <div class="col-10 col-md-5 emerge" data-expose="true">
-      <div class="case position-relative">
-        <div class="case-img mb-2">
-          <img src="{{site.baseurl}}/src/img/project_img/{{my_game.folder}}/{{my_game.cover}}" class="w-100" alt="Проект — {{my_game.title}}">
-        </div>
-        <a href="{{site.baseurl}}{{my_game.url}}" class="stretched-link fs-4 fw-normal">{{my_game.title}}</a>
-      </div>
-    </div>
-    {% assign combat_unit = site.projects | where:"folder", "combat_unit"  | first %}
-    <div class="col-10 col-md-3 offset-md-2 emerge" data-expose="true">
-      <div class="case position-relative">
-        <div class="case-img mb-2">
-         <img src="{{site.baseurl}}/src/img/project_img/{{combat_unit.folder}}/{{combat_unit.cover}}" class="w-100" alt="Проект — {{combat_unit.title}}">
-        </div>
-        <a href="{{site.baseurl}}{{combat_unit.url}}" class="stretched-link fs-4 fw-normal">{{combat_unit.title}}</a>
-      </div>
-    </div>
-
-
-    <!-- 2 right -->
-    {% assign datango = site.projects | where:"folder", "datango"  | first %}
-    <div class="col-10 col-md-3 emerge" data-expose="true">
-      <div class="case position-relative">
-        <div class="case-img mb-2">
-         <img src="{{site.baseurl}}/src/img/project_img/{{datango.folder}}/{{datango.cover}}" class="w-100" alt="Проект — {{datango.title}}">
-        </div>
-        <a href="{{site.baseurl}}{{datango.url}}" class="stretched-link fs-4 fw-normal">{{datango.title}}</a>
-      </div>
-    </div>
     {% assign plainrussian = site.projects | where:"folder", "plainrussian"  | first %}
-    <div class="col-10 col-md-5 offset-md-2 emerge" data-expose="true">
+    <div class="col-10 col-md-5 emerge" data-expose="true">
       <div class="case position-relative">
         <div class="case-img mb-2">
           <img src="{{site.baseurl}}/src/img/project_img/{{plainrussian.folder}}/{{plainrussian.cover}}" class="w-100" alt="Проект — {{plainrussian.title}}">
@@ -73,10 +74,48 @@ layout: default
         <a href="{{site.baseurl}}{{plainrussian.url}}" class="stretched-link fs-4 fw-normal">{{plainrussian.title}}</a>
       </div>
     </div>
+    {% assign datango = site.projects | where:"folder", "datango"  | first %}
+    <div class="col-10 col-md-3 offset-md-2 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+         <img src="{{site.baseurl}}/src/img/project_img/{{datango.folder}}/{{datango.cover}}" class="w-100" alt="Проект — {{datango.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{datango.url}}" class="stretched-link fs-4 fw-normal">{{datango.title}}</a>
+      </div>
+    </div>
+
+    <!-- 2 right -->
+    {% assign combat_unit = site.projects | where:"folder", "combat_unit"  | first %}
+    <div class="col-10 col-md-3 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+         <img src="{{site.baseurl}}/src/img/project_img/{{combat_unit.folder}}/{{combat_unit.cover}}" class="w-100" alt="Проект — {{combat_unit.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{combat_unit.url}}" class="stretched-link fs-4 fw-normal">{{combat_unit.title}}</a>
+      </div>
+    </div>
+    {% assign my_game = site.projects | where:"folder", "my_game"  | first %}
+    <div class="col-10 col-md-5 offset-md-2 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{my_game.folder}}/{{my_game.cover}}" class="w-100" alt="Проект — {{my_game.title}}">
+        </div>
+        <a href="{{site.baseurl}}{{my_game.url}}" class="stretched-link fs-4 fw-normal">{{my_game.title}}</a>
+      </div>
+    </div>
 
     <!-- 3 center -->
-    {% assign media_mission = site.projects | where:"folder", "media_mission"  | first %}
+    {% assign cinemapark = site.projects | where:"folder", "cinemapark"  | first %}
     <div class="col-10 col-md-2 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img-sm mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{cinemapark.folder}}/{{cinemapark.cover}}" class="w-100" alt="Проект — {{cinemapark.title}}">
+        </div>  
+        <a href="{{site.baseurl}}{{cinemapark.url}}" class="stretched-link fs-4 fw-normal">{{cinemapark.title}}</a>
+      </div>
+    </div>
+    {% assign media_mission = site.projects | where:"folder", "media_mission"  | first %}
+    <div class="col-10 col-md-4 offset-md-1 emerge" data-expose="true">
       <div class="case position-relative">
         <div class="case-img-sm mb-2">
           <img src="{{site.baseurl}}/src/img/project_img/{{media_mission.folder}}/{{media_mission.cover}}" class="w-100" alt="Проект — {{media_mission.title}}">
@@ -85,21 +124,12 @@ layout: default
       </div>
     </div>
     {% assign rooms_kitchen = site.projects | where:"folder", "rooms_kitchen"  | first %}
-    <div class="col-10 col-md-4 offset-md-1 emerge" data-expose="true">
+    <div class="col-10 col-md-2 offset-md-1 emerge" data-expose="true">
       <div class="case position-relative">
         <div class="case-img-sm mb-2">
           <img src="{{site.baseurl}}/src/img/project_img/{{rooms_kitchen.folder}}/{{rooms_kitchen.cover}}" class="w-100" alt="Проект — {{rooms_kitchen.title}}">
         </div>  
         <a href="{{site.baseurl}}{{rooms_kitchen.url}}" class="stretched-link fs-4 fw-normal">{{rooms_kitchen.title}}</a>
-      </div>
-    </div>
-    {% assign cinemapark = site.projects | where:"folder", "cinemapark"  | first %}
-    <div class="col-10 col-md-2 offset-md-1 emerge" data-expose="true">
-      <div class="case position-relative">
-        <div class="case-img-sm mb-2">
-          <img src="{{site.baseurl}}/src/img/project_img/{{cinemapark.folder}}/{{cinemapark.cover}}" class="w-100" alt="Проект — {{cinemapark.title}}">
-        </div>  
-        <a href="{{site.baseurl}}{{cinemapark.url}}" class="stretched-link fs-4 fw-normal">{{cinemapark.title}}</a>
       </div>
     </div>
 
@@ -121,7 +151,7 @@ layout: default
 
 
 <!-- ABOUT -->
-<div class="container-fluid overflow-x-hidden">
+<div class="container-xxl overflow-x-hidden">
   <div class="row">
     <div class="col-10 py-5">
       <h2 class="fw-normal lh-sm">Помогаю наладить коммуникацию между потребителем и брендом. </h2>

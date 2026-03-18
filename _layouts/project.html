@@ -6,7 +6,7 @@ layout: default
 <div class="project">
   
   <!-- HERO -->
-  <div class="container-fluid pt-5 pb-3">
+  <div class="container-xxl pt-5 pb-3">
     <div class="row pb-4">
       <div class="col-10">
         <h1 class="lh-1 pb-3">{{page.title}}</h1>
@@ -14,7 +14,14 @@ layout: default
         <p class="fs-4">{{page.description}}</p>
         {% endif %}
         {% if page.src %}
-        <p class="fs-4"><a href="{{page.src}}" target="_blank">{{page.src | remove: "https://"}}</a></p>
+        <p class="fs-4 position-relative d-inline-block">
+
+          {% if page.favicon %}
+            <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/favicon.ico" width="24" height="24" class="rounded">
+          {% endif %}
+
+          <a href="{{page.src}}" target="_blank" rel="noreferrer" class="stretched-link">{{page.src | remove: "https://"}}</a>
+        </p>
         {% endif %}
       </div>
     </div>
@@ -27,7 +34,7 @@ layout: default
     {{content}}
   </section>
   {% else %}
-  <div class="container-fluid">
+  <div class="container-xxl">
     <div class="row pb-4">
       <div class="col">
         {{content}}

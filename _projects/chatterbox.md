@@ -20,10 +20,10 @@ description: Нарисовал интерфейс и посадочную ст
 
 ### Лендинг
 
-С самого старта коротко рассказываем о сути продукта. Далее показываем, что понимаем боль пользователя и предлагаем решение. Реальные отзывы и конкретные показатели эффективности ещё больше помогают показать сильные стороны сервиса.
+С самого старта коротко рассказываем о сути продукта. Далее показываем, что понимаем боль пользователя и предлагаем решение. Реальные отзывы и конкретные показатели эффективности ещё больше помогают раскрыть сильные стороны сервиса.
 
 <div class="row pb-5">
-  <div class="col-10 text-center emerge">
+  <div class="col-10 text-center emerge" data-expose="true">
     <p class="mx-auto">
       <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/landing.png" class="img-fluid rounded mb-3" alt="Лендинг">
     </p>
@@ -32,32 +32,32 @@ description: Нарисовал интерфейс и посадочную ст
 
 ### Ассистент
 
-На страницах входа и регистрации тоже коротко рассказываем о сервисе для тех, кто пришёл с поисковиков или по ссылке. Перлинковка между этими страницами не позволит заблудиться.
+На страницах входа и регистрации тоже коротко рассказываем о сервисе для тех, кто пришёл с поисковиков или по ссылке. Перелинковка между этими страницами не позволит заблудиться.
 
 <div class="row pb-5">
-  <div class="col-10 col-lg-5 emerge">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/auth.png" class="img-fluid rounded mb-3" alt="Авторизация">
   </div>
-  <div class="col-10 col-lg-5 emerge">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/register.png" class="img-fluid rounded mb-3" alt="Регистрация">
   </div>
 </div>
 
-Раньше в рабочем прототипе интерфейс ассистента копировал чат «Онлифанса» с работающим браузерным расширением для него. Посчитал это неуместным из-за нового контекста, поэтому теперь функционал реализован в виде простенького генератора ответов фанатам. 
+Раньше в рабочем прототипе интерфейс ассистента копировал чат «Онлифанса» с работающим браузерным расширением для него. Посчитал это неуместным из-за нового контекста, поэтому теперь функционал реализован в виде простенького генератора ответов фанатам. 
 
 Ещё мне показалась несправедливым генерация сообщения на английском языке по-умолчанию при отсутствии контекста. Теперь язык можно преднастроить, появился задел на добавление других языков, пользователь может предугадать ответ от системы, и больше никаких лишних трат денег на генерацию нерелевантных ответов.
 
 <div class="row pb-5">
-  <div class="col-10 col-lg-5 emerge">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/assistant.png" class="img-fluid rounded mb-3" alt="Ассистент">
   </div>
-  <div class="col-10 col-lg-5 emerge">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/assistant-inputFilled.png" class="img-fluid rounded mb-3" alt="Ассистент заполненный">
   </div>
-  <div class="col-10 col-lg-5 emerge">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/assistant-generate.png" class="img-fluid rounded mb-3" alt="Ассистент генерация">
   </div>
-  <div class="col-10 col-lg-5 emerge">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/assistant-result.png" class="img-fluid rounded mb-3" alt="Ассистент результат">
   </div>
 </div>
@@ -65,10 +65,10 @@ description: Нарисовал интерфейс и посадочную ст
 В профиле можно посмотреть статистику по сгенерированным сообщениям и приобрести новый пакет. 
 
 <div class="row pb-5">
-  <div class="col-10 col-lg-5 emerge">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/profile.png" class="img-fluid rounded mb-3" alt="Профиль">
   </div>
-  <div class="col-10 col-lg-5 emerge">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/order.png" class="img-fluid rounded mb-3" alt="Лендинг">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/order-success.png" class="img-fluid rounded mb-3" alt="Лендинг">
   </div>

@@ -830,7 +830,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1520px;
   }
 }
 :root {
@@ -12808,6 +12808,10 @@ a.navbar-brand.active {
   color: rgba(8, 66, 152, 0.8);
   border-bottom-color: transparent;
 }
+ol, ul {
+  padding-left: 1.25rem;
+}
+
 .navbar-nav .nav-item .nav-link {
   display: inline-block;
   margin-right: 1rem;
@@ -12850,6 +12854,8 @@ a.navbar-brand.active {
 .project .h2, .project .h3, .project .h4, .project .h5, .project .h6,
 .project p,
 .project hr,
+.project ul,
+.project ol,
 .post h2,
 .post h3,
 .post h4,
@@ -12861,18 +12867,33 @@ a.navbar-brand.active {
 .post .h5,
 .post .h6,
 .post p,
-.post hr {
-  max-width: 768px;
+.post hr,
+.post ul,
+.post ol {
+  max-width: 1024px;
   margin-bottom: 1rem;
 }
 .project p,
-.post p {
+.project ul,
+.project ol,
+.post p,
+.post ul,
+.post ol {
   font-size: 1.25rem;
 }
 .project img,
 .post img {
   max-width: 100%;
 }
+.project ul,
+.post ul {
+  list-style: "— ";
+}
+.project ul li,
+.post ul li {
+  padding-bottom: 0.5rem;
+}
+
 @media (max-width: 767.98px) {
   h1, .h1, .fs-1 {
     font-size: 1.5rem !important;
@@ -12888,7 +12909,9 @@ a.navbar-brand.active {
   h6, .h6, .fs-6 {
     font-size: 1rem !important;
   }
-  .project p {
+  .project p,
+  .project ul,
+  .project ol {
     font-size: 1rem;
   }
 }

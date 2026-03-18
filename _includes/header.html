@@ -1,6 +1,6 @@
 <header class="pb-5">
   <nav class="navbar navbar-expand-md navbar-light py-3">
-    <div class="container-fluid">
+    <div class="container-xxl">
 
       {% if page.layout == 'home' %}
       <span class="navbar-brand p-0 fs-3">Паша Медников</span>
@@ -17,9 +17,9 @@
           <li class="nav-item">
             <a class="nav-link p-0" href="{{site.baseurl}}/#works">дизайн</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link p-0{% if page.url contains 'blog' %} active{% endif %}" href="{{site.baseurl}}/blog/">статьи</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link p-0{% if page.url contains 'about' %} active{% endif %}" href="{{site.baseurl}}/about/">резюме</a>
           </li>

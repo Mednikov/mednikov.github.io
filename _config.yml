@@ -13,16 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Паша Медников — веб-дизайнер и front-end разработчик
-email: hello@pavelmednikov.com
+title: Паша Медников — продуктовый дизайнер цифровых сервисов на открытых данных.
+email: pashamednikov@inbox.ru
 description: > # this means to ignore newlines until "baseurl:"
-  Проектирую цифровые сервисы на открытых данных, сайты и инфографику. Дизайнер в Инфокультуре.
+  Проектирую цифровые сервисы на открытых данных, сайты и инфографику.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://pavelmednikov.com # the base hostname & protocol for your site, e.g. http://example.com
-enforce_ssl: pavelmednikov.com
+url: https://pashamednikov.ru # the base hostname & protocol for your site, e.g. http://example.com
+enforce_ssl: pashamednikov.ru
 
 author: Паша Медников
-subtitle: Веб-дизайнер и front-end разработчик
+subtitle: Веб-дизайнер и фронтенд-разработчик
 
 fb_app_id: 222928808209319
 
