@@ -33,23 +33,28 @@ permalink: /about/
       		</div>
       		<div class="col-7 col-lg-8">
       		  <ul class="list-unstyled pb-3">
-      		    <li class="pb-2">АНО&nbsp;«Инфокультура»</li>
-      		    <li>2014 — по&nbsp;настоящее время</li>
-      		    <li>Продуктовый дизайнер, фронтенд-разработчик</li>
+      		    <li class="pb-2">ИЦ «Безопасный транспорт»</li>
+      		    <li>2025&nbsp;— по&nbsp;настоящее время</li>
+      		    <li>Продуктовый дизайнер</li>
       		  </ul>
+            <ul class="list-unstyled pb-3">
+              <li class="pb-2">АНО&nbsp;«Инфокультура»</li>
+              <li>2014&nbsp;— 2025</li>
+              <li>Продуктовый дизайнер, фронтенд-разработчик</li>
+            </ul>
       		  <ul class="list-unstyled pb-3">
       		    <li class="pb-2">ФКУ&nbsp;«ЦЭАИТ&nbsp;СП»</li>
-      		    <li>2019 — 2023</li>
+      		    <li>2019&nbsp;— 2023</li>
       		    <li>Эксперт</li>
       		  </ul>
       		  <ul class="list-unstyled pb-3">
       		    <li class="pb-2">РА&nbsp;«Stereopeople»</li>
-      		    <li>2013 — 2014</li>
+      		    <li>2013&nbsp;— 2014</li>
       		    <li>Веб-дизайнер, фронтенд-разработчик</li>
       		  </ul>
       		  <ul class="list-unstyled pb-3">
       		    <li class="pb-2">Самозанятый</li>
-      		    <li>2010 — по&nbsp;настоящее время</li>
+      		    <li>2010&nbsp;— по&nbsp;настоящее время</li>
       		    <li>Веб-дизайнер</li>
       		  </ul>
       		</div>
