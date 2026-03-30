@@ -28,10 +28,10 @@ permalink: /about/
         Работал над проектами разного масштаба — от государственных и некоммерческих платформ до коммерческих сайтов крупных клиентов вроде КАРО Фильм и Росатома. Ищу возможность применять свой опыт в продуктовой команде, где дизайн — это не просто «сделать красиво».
       </h4>
         <div class="row pb-4 fs-4">
-      		<div class="col-3 col-lg-2">
+      		<div class="col-4 col-md-3 col-lg-2">
       		  <p class="text-muted">Опыт работы</p>
       		</div>
-      		<div class="col-7 col-lg-8">
+      		<div class="col-6 col-md-7 col-lg-8">
       		  <ul class="list-unstyled pb-3">
       		    <li class="pb-2">ИЦ «Безопасный транспорт»</li>
       		    <li>2025&nbsp;— по&nbsp;настоящее время</li>
@@ -60,10 +60,10 @@ permalink: /about/
       		</div>
         </div>
         <div class="row pb-4 fs-4">
-      		<div class="col-3 col-lg-2">
+      		<div class="col-4 col-md-3 col-lg-2">
       		  <p class="text-muted">Образование</p>
       		</div>
-      		<div class="col-7 col-lg-8">
+      		<div class="col-6 col-md-7 col-lg-8">
       		  <ul class="list-unstyled pb-3">
       		    <li class="pb-2">
       		    	Московский государственный технический университет им.&nbsp;Н.Э.&nbsp;Баумана
@@ -74,10 +74,10 @@ permalink: /about/
       		</div>
         </div>
         <div class="row pb-4 fs-4">
-      		<div class="col-3 col-lg-2">
+      		<div class="col-4 col-md-3 col-lg-2">
       		  <p class="text-muted">Ключевые навыки</p>
       		</div>
-      		<div class="col-7 col-lg-8">
+      		<div class="col-6 col-md-7 col-lg-8">
       		  <ul class="list-unstyled pb-3">
       		    <li>Интерфейсы</li>
       		    <li>Веб-дизайн</li>
